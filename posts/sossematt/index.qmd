@@ -3,7 +3,7 @@ title: 'Är "sysselsättning"" ett sossemått?'
 author: "Christian Lindell"
 date: "2023-10-31"
 categories: [arbetsmarknad]
-image: "sossematt1.png"
+image: "sossematt1.PNG"
 ---
 
 Den här bloggen är till stora delar irritationsdriven, vilket innebär att jag skriver om saker som irriterar mig. En av de saker som väcker min professionella missaktning är alla de som försöker politisera statistiska begrepp. Följer man debatten på sociala medier så verkar det som om "arbetslöshet" är höger och "sysselsättning" vänster. Det är helt befängt. Man behöver inte leta länge för att hitta den här typen av inlägg:
