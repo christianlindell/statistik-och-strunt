@@ -60,7 +60,7 @@
 <polyline points='201.08,305.05 201.08,40.83 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='278.60,305.05 278.60,40.83 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='356.11,305.05 356.11,40.83 ' style='stroke-width: 1.16; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='46.06,61.36 84.81,54.80 123.57,52.84 162.33,55.03 201.08,64.68 239.84,75.56 278.60,66.19 317.35,71.34 356.11,107.31 ' style='stroke-width: 2.13; stroke: #8B0000; stroke-linecap: butt;' />
+<polyline points='46.06,61.36 84.81,54.80 123.57,52.84 162.33,55.03 201.08,64.68 239.84,75.56 278.60,66.19 317.35,71.34 356.11,107.31 ' style='stroke-width: 2.13; stroke: #2f6db5; stroke-linecap: butt;' />
 <polyline points='46.06,107.30 84.81,108.65 123.57,112.28 162.33,118.51 201.08,126.70 239.84,135.00 278.60,125.03 317.35,127.53 356.11,144.95 ' style='stroke-width: 2.13; stroke: #A9A9A9; stroke-linecap: butt;' />
 <rect x='30.55' y='40.83' width='341.06' height='264.22' style='stroke-width: 1.16; stroke: #333333;' />
 </g>
@@ -99,7 +99,7 @@
 <text x='356.11' y='317.30' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='21.34px' lengthAdjust='spacingAndGlyphs'>2022</text>
 <rect x='383.57' y='146.70' width='64.00' height='52.49' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
 <rect x='389.54' y='158.65' width='17.28' height='17.28' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
-<line x1='391.27' y1='167.29' x2='405.10' y2='167.29' style='stroke-width: 2.13; stroke: #8B0000; stroke-linecap: butt;' />
+<line x1='391.27' y1='167.29' x2='405.10' y2='167.29' style='stroke-width: 2.13; stroke: #2f6db5; stroke-linecap: butt;' />
 <rect x='389.54' y='175.93' width='17.28' height='17.28' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
 <line x1='391.27' y1='184.57' x2='405.10' y2='184.57' style='stroke-width: 2.13; stroke: #A9A9A9; stroke-linecap: butt;' />
 <text x='412.80' y='170.73' style='font-size: 9.60px; font-family: "Arial";' textLength='28.79px' lengthAdjust='spacingAndGlyphs'>Malmö</text>

@@ -89,8 +89,8 @@
 <polyline points='390.81,410.50 390.81,23.18 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='423.42,410.50 423.42,23.18 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='456.03,410.50 456.03,23.18 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
-<polyline points='48.41,217.90 64.72,217.28 81.02,209.83 97.32,185.39 113.63,147.08 129.93,155.36 146.24,164.70 162.54,175.45 178.85,170.81 195.15,158.56 211.46,148.86 227.76,158.95 244.07,170.89 260.37,173.56 276.68,166.01 292.98,163.19 309.29,162.55 325.59,156.19 341.90,153.94 358.20,150.99 374.51,144.21 390.81,138.35 407.12,136.20 423.42,148.13 439.72,140.59 456.03,119.51 ' style='stroke-width: 2.13; stroke: #006400; stroke-linecap: butt;' />
-<polyline points='48.41,100.45 64.72,96.23 81.02,88.09 97.32,79.21 113.63,61.50 129.93,62.41 146.24,70.12 162.54,76.19 178.85,80.94 195.15,79.49 211.46,74.03 227.76,76.20 244.07,84.32 260.37,83.39 276.68,76.46 292.98,75.37 309.29,71.66 325.59,70.33 341.90,66.71 358.20,61.90 374.51,55.30 390.81,49.16 407.12,49.13 423.42,53.16 439.72,45.95 456.03,40.78 ' style='stroke-width: 2.13; stroke: #8B0000; stroke-linecap: butt;' />
+<polyline points='48.41,217.90 64.72,217.28 81.02,209.83 97.32,185.39 113.63,147.08 129.93,155.36 146.24,164.70 162.54,175.45 178.85,170.81 195.15,158.56 211.46,148.86 227.76,158.95 244.07,170.89 260.37,173.56 276.68,166.01 292.98,163.19 309.29,162.55 325.59,156.19 341.90,153.94 358.20,150.99 374.51,144.21 390.81,138.35 407.12,136.20 423.42,148.13 439.72,140.59 456.03,119.51 ' style='stroke-width: 2.13; stroke: #2f6db5; stroke-linecap: butt;' />
+<polyline points='48.41,100.45 64.72,96.23 81.02,88.09 97.32,79.21 113.63,61.50 129.93,62.41 146.24,70.12 162.54,76.19 178.85,80.94 195.15,79.49 211.46,74.03 227.76,76.20 244.07,84.32 260.37,83.39 276.68,76.46 292.98,75.37 309.29,71.66 325.59,70.33 341.90,66.71 358.20,61.90 374.51,55.30 390.81,49.16 407.12,49.13 423.42,53.16 439.72,45.95 456.03,40.78 ' style='stroke-width: 2.13; stroke: #bf4a43; stroke-linecap: butt;' />
 <rect x='28.03' y='23.18' width='448.38' height='387.32' style='stroke-width: 1.07; stroke: #333333;' />
 </g>
 <g clip-path='url(#cpMC4wMHw0ODEuODl8MC4wMHw0ODEuODk=)'>
@@ -155,9 +155,9 @@
 <rect x='131.53' y='434.54' width='241.39' height='28.24' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
 <text x='137.00' y='452.60' style='font-size: 11.00px; font-family: "Arial";' textLength='59.94px' lengthAdjust='spacingAndGlyphs'>Födelseland</text>
 <rect x='202.42' y='440.02' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<line x1='204.15' y1='448.66' x2='217.98' y2='448.66' style='stroke-width: 2.13; stroke: #006400; stroke-linecap: butt;' />
+<line x1='204.15' y1='448.66' x2='217.98' y2='448.66' style='stroke-width: 2.13; stroke: #2f6db5; stroke-linecap: butt;' />
 <rect x='302.12' y='440.02' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<line x1='303.84' y1='448.66' x2='317.67' y2='448.66' style='stroke-width: 2.13; stroke: #8B0000; stroke-linecap: butt;' />
+<line x1='303.84' y1='448.66' x2='317.67' y2='448.66' style='stroke-width: 2.13; stroke: #bf4a43; stroke-linecap: butt;' />
 <text x='225.18' y='451.81' style='font-size: 8.80px; font-family: "Arial";' textLength='71.45px' lengthAdjust='spacingAndGlyphs'>född utanför EU27</text>
 <text x='324.88' y='451.81' style='font-size: 8.80px; font-family: "Arial";' textLength='42.56px' lengthAdjust='spacingAndGlyphs'>inrikesfödd</text>
 <text x='28.03' y='14.93' style='font-size: 13.20px; font-family: "Arial";' textLength='447.37px' lengthAdjust='spacingAndGlyphs'>Andel heltidsarbetande efter födelseland av befolkning 20-64 år, 1997 - 2022</text>
