@@ -42,11 +42,10 @@ h1, h2, h3, h4,
   color: #444441;
 }
 
-/* Förhandsbilder: samma storlek, beskurna, med tunn ram */
-.quarto-post .thumbnail-image {
-  width: 160px;
-  object-fit: cover;
-  object-position: top;
+/* Förhandsbilder: samma ruta för alla, hela bilden visas (ingen beskärning) */
+div.quarto-post .thumbnail img.thumbnail-image {
+  object-fit: contain;
+  background: #ffffff;
   border: 1px solid #e1e0d9;
   border-radius: 2px;
 }

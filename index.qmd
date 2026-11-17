@@ -9,7 +9,7 @@ listing:
   filter-ui: false
   date-format: "D MMMM YYYY"
   image-align: right
-  image-height: 110px
+  image-height: 150px
   fields: [date, categories, title, description, image]
 page-layout: full
 ---
