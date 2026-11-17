@@ -3,7 +3,7 @@ title: "Den långa bluffen"
 author: "Christian Lindell"
 date: "2026-05-20"
 categories: [arbetsmarknad]
-image: "hink_alosa.svg"
+image: "Den-langa-bluffen-Framsida-scaled.jpg"
 ---
 
 ![](Den-langa-bluffen-Framsida-scaled.jpg){fig-align="center" width="363"}

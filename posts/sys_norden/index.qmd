@@ -3,7 +3,7 @@ title: "Sveriges höga arbetslöshet beror inte på att få arbetar"
 author: "Christian Lindell"
 date: "2026-02-01"
 categories: [arbetsmarknad]
-image: "arbetmarknadstatus_norden.png"
+image: "arbetmarknadstatus_norden.svg"
 ---
 
 Ofta hör man att Danmarks och Norges arbetsmarknad fungerar mycket bättre än Sveriges eftersom Sverige har mycket högre arbetslöshet. Men då ställer jag mig frågan: Hur kan arbetsmarknaden sägas fungera bättre i våra grannländer när andelen förvärvsarbetande är LÄGRE än i Sverige?
