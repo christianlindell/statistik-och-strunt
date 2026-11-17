@@ -1,0 +1,87 @@
+---
+title: "Samnytt och de ensamkommande"
+author: "Christian Lindell"
+date: "2023-12-11"
+categories: [arbetsmarknad]
+image: "rapport_ensamkommande.PNG"
+---
+
+## Samnytt granskar SCB:s ensamkommande-rapport!
+
+***SD närstående Samnytt har "granskat" SCB:s rapport om hur det gått för de ensamkommande flyktingbarn som kom 2015. Det mesta materialet verkar ha hämtats från en YouTube-video av SD:s riksdagsman*** **Ludvig Aspling. *Men man har lyckats få nästan allt om bakfoten. Man har missförstått vilken metod SCB använt och tror att den bygger på intervjuundersökningar, man har enormt överskattat betydelsen av subventionerade arbeten (som i själva verket står för några procent av sysselsättningen) och man tror att arbetslöshetsersättning är en arbetsrelaterad inkomst.***
+
+Den SD närstående sajten Samnytt har publicerat en "granskning" av [SCB:s rapport](https://www.scb.se/pressmeddelande/atta-av-tio-ensamkommande-fran-2015-ar-sysselsatta/) om de ensamkommande flyktingbarn som kom 2015. Som förväntat är inte Samnytt särskilt nöjda med uppföljningen, vilken visar att drygt 80 % av de ensamkommande som fått uppehållstillstånd var sysselsatta. Drygt 70 % var självförsörjande om man accepterar Sv Näringslivs och Entreprenörskapsforums definition på en inkomst på minst 4 prisbasbelopp. Samnytts artikel går att läsa [här](https://samnytt.se/sd-kritik-scbs-rapport-om-ensamkommande-missvisande-och-feltolkad) och Ludvig Asplings YouTube-video kan man se [här](https://www.youtube.com/watch?v=ZReoMDOacrs).
+
+SCB har gjort undersökningen av de ensamkommandes situation på arbetsmarknaden genom att välja ut den största årskullen bland de ensamkommande, vilket var de som var födda 1999 och alltså var 23 år 2022. Sysselsättningen mäts i november 2022 och årsinkomsten beräknas på vad de tjänat mellan 1 december 2021 - 30 november 2022.
+
+## Granskningen en okunnig praktflopp
+
+Jag kommer nedan att gå igenom ett antal påståenden som görs i artikeln och som är rakt av fel.
+
+***Påstående:** "Som så mycket annat i svensk offentlighet som fortfarande trots att vi lever i en annan tid bygger på tillit är sysselsättningssiffrorna inte heller baserade på några kontroller -- man har bara frågat personerna om de har varit sysselsatta och om svaret varit jakande -- sant eller falskt -- blir man upptagen i SCB:s rullor som sysselsatt."*
+
+**Svar:** Vad Samnytt påstår gäller för den intervjubaserade Arbetskraftsundersökningen (AKU). I den undersökningen gör man omfattande intervjuer där den intervjuade får ange vad man gjort under en mätvecka. Om man uppger att man lönearbetat minst 1 timme eller varit kortvarigt frånvarande från ett jobb pga sjukdom eller föräldraledighet så räknas man som sysselsatt.
+
+*Det är bara det att [SCB:s rapport](https://www.scb.se/hitta-statistik/statistik-efter-amne/levnadsforhallanden/levnadsforhallanden/integration--analys/pong/publikationer/ensamkommande-2015.-boende-utbildning-och-sysselsattning-2022) inte bygger på AKU* *utan på den registerbaserade statistiken i Befolkningens ArbetsmarknadsStatus (BAS-registret)*. I BAS räknas man som sysselsatt om en arbetsgivare har lämnat kontrolluppgift (AGI) för en löneinkomst eller om man deklarerat en inkomst som företagare. Det finns alltså inga felkällor genom att folk kan ge osanna svar, vilket Samnytt försöker påskina.
+
+Dessutom bör det påpekas att intervjuresultaten i AKU stäms av mot registerstatistik och justeras baserat på vad man fått in från till exempel Skatteverket i form av månatliga kontrolluppgifter. Ännu ett fel hos Samnytt och Aspling.
+
+***Påstående:** "Och naturligtvis räknas i statistiken in om man befinner sig i någon skattefinansierad arbetsmarknadsåtgärd som har väldigt lite med ett riktigt jobb att göra eller någon av de anställningsformer som i och för sig kan avse riktiga jobb på ett riktigt företag men där återigen skattebetalarna, inte arbetsgivaren tar notan för personens lön."*
+
+**Svar:** Här underlåter man att nämna att endast de arbetsmarknadspolitiska åtgärder som betalas ut som lönesubvention till arbetsgivare och där den anställde får en vanlig lön gör att man räknas som "sysselsatt" i statistiken. Artikeln och YouTube-videon den bygger på ger sken av att det finns massor av sådana jobb.
+
+Men hur många är det egentligen som arbetar i subventionerade jobb bland de ensamkommande? Tyvärr har inte SCB skrivit det i rapporten, men det finns andra källor man kan gå på. I Arbetsförmedlingens månadsstatistik kan man se att det i november 2022 fanns 1 702 personer var födda utanför Europa och i åldern 20-24 år, vilka räknades som sysselsatta genom åtgärder från Arbetsförmedlingen. Av dessa var 1 225 män och 477 kvinnor. Så maximalt skulle 1 700 av de drygt 16 000 ensamkommande sysselsatta kunna vara sysselsatta genom arbetsmarknadsåtgärder.
+
+Men det är en helt orealistiskt hög siffra. Det skulle nämligen förutsätta att alla dessa arbetsmarknadspolitiska åtgärder gått till just ensamkommande. Om vi fokuserar på männen (som utgör 94 % av de som fått uppehållstillstånd) så fanns det totalt drygt 40 000 sysselsatta män födda utanför Europa i åldern 20-24 år som de 1 225 subventionerade jobben ska fördelas på.
+
+Men det blir värre än så. SCB:s utvärdering bygger på de som var födda år 1999 och således fyllde 23 år 2022. Bland dem fanns det enligt SCB ca 6 500 sysselsatta män. Hur många 23-åringa män som var födda utanför Europa fanns det i sådana arbetsmarknadspolitiska åtgärder som innebar att de räknades som sysselsatta? Tyvärr redovisas inte detta i Arbetsförmedlingens månadsstatistik. Därför skrev jag till Af:s utredare och bad dem ta fram den uppgiften. Det visade sig finnas 396 män som var födda utanför Europa och var 23 år gamla som var i arbetsmarknadspolitiska åtgärder som räknades som "sysselsättning" i statistiken. Maximalt kan alltså 6,1 % av de sysselsatta männen ha subventionerade arbeten tack vare arbetsmarknadspolitiska åtgärder. Men återigen - det förutsätter att samtliga dessa åtgärder gått till just ensamkommande. Snarare handlar det gissningsvis om 200-300. Vi är alltså nere på några procent av de sysselsatta som har "pysselsättning" för att tala SD-lingo.
+
+***Påstående:** "Aspling påpekar att sysselsättningsbegreppet inte är tänkt att användas som ett integrationsmått på hur bra det gått för exempelvis som här de så kallade ensamkommande. Det är i stället en mätmetod som kompromissats fram för att kunna jämföra sysselsättningen mellan olika länder. Men då det i sammanhang som dessa ger väldiga glädjesiffror har det exploaterats hårt av aktörer som velat framställa massinvandringen som en lönsam affär för Sverige."*
+
+**Svar:** Här är man helt ute och snurrar. Sysselsättning har tagits fram i mer än 50 år. Det har använts som jämförelsemått mellan inrikes och utrikesfödd, män och kvinnor, arbetare och tjänstemän otaliga gånger. Sammantaget används det betydligt mera för att följa inrikes utveckling på arbetsmarknaden än för internationella jämförelser. Detta gäller AKU-måttet som Samnytt felaktigt tror är det mått som undersökningen bygger på. Det finns otaliga åldersindelningar och fördelsningar på kön och utbildningsnivå, arbetstid och liknande som gör måttet anpassningabart till varje lands behov. Sysselsättning enligt BAS är däremot inte internationellt standardiserat.
+
+**Påstående:** *"Aftonbladet och likasinnade har också åberopat SCB:s rapport för att hävda att det till och med skulle gå bättre för den här gruppen på arbetsmarknaden än för svenskar. Men för att komma fram till det har man valt att inte ta med studerande. Bland svenskar är det fler som pluggar. Det är också färre som är arbetslösa jämfört med"ensamkommande"."*
+
+**Svar:** Studerande räknas aldrig som sysselsatta i statistiken. Som det påpekades ovan är man sysselsatt om man fått lön från en arbetsgivare eller deklarerat inkomst som företagare. Men naturligtvis är det bra på sikt att folk studerar.
+
+***Påstående:** "Men då ska man alltså komma ihåg att svenskar i väsentligt lägre grad än ensamkommande och andra migranter är föremål för olika sysselsättningsåtgärder som ger en pinne i statistiken men har väldigt lite med riktiga jobb att göra."*
+
+**Svar:** Som sagt - det handlar om några procent av de ensamkommande som är sysselsatta via arbetsmarknadspolitiska åtgärder. Att generellt säga att subventionerade arbeten inte är riktiga jobb är dessutom felaktigt. Jag tror att de städare från Samhall som tidigare skötte städningen i min bostadsrättsförening skulle ha en del att invända mot att de inte gjorde riktiga jobb. Det finns exempel på riktigt dåliga subventionerade jobb, men också på det motsatta.
+
+AF:s största insats på subventionerade jobb till arbetslösa utrikesfödda är *nystartsjobb*. I oktober 2023 var 17 578 personer födda utanför Europa och i åldern 16-64 år sysselsatta i nystartsjobb. Men dessa var inte gratis för arbetsgivaren. Arbetsförmedling har en [sida](https://arbetsformedlingen.se/for-arbetsgivare/anstallningsstod/om-ersattning-for-nystartsjobb#/nystartsjobb) där man kan beräkna kostnaden för arbetsgivaren. Om vi räknar på att den anställde ska ha en månadslön på 25 000 kr så är den lägsta kostnaden arbetsgivaren ska betala ca 14 000 kronor. Därtill kommer administrationskostnader, kostnad för arbetsplats och utrustning etc. Om arbetsgivaren inte får någon nytta tillbaka av anställningen vore det konstigt.
+
+***Påstående:** "Men gruppen ensamkommande kan enligt SCB:s siffror stoltsera med lite bättre lönenivåer, runt 18 000 kronor i månaden före skatt. Det är samtidigt dock bara 2 av 3 i gruppen som når upp till sådana löner. Och för att noteras som sådan"höginkomsttagare" i det afghanska civilsamhället i Sverige får man tillgodoräkna sig betydligt mer saker än vad vi normalt räknar som arbetsinkomster.*
+
+*Olika former av arbetslöshetsersättning och sjukpenning kvalificerar sig också i den här mätningen. Om dessa inte räknades in skulle beloppet 18 000 kronor i månaden behöva sänkas. Med hur mycket eller lite är dock svårare att avgöra. Och återigen räknas också pengar man får för skattesubventionerade jobb och åtgärder."*
+
+**Svar:** Lite rätt, sjukpenning och föräldraförsäkring [ingår i arbetsrelaterade inkomster](https://www.scb.se/contentassets/592dcafe2a3b4e65b8e5434796bab0af/huvudsaklig-inkomstkalla-och-arbetsrelaterad-inkomstniva.pdf). Däremot inga arbetslöshetesersättningar. (Jag undrar hur man tänker om man tror att ersättning för arbetslöshet är en "arbetsinkomst"?).
+
+***Påstående:** "För kommuner som har dålig ekonomi är det nämligen en vinstaffär att skapa ett arbetstillfälle som utannonseras som en så kallad extratjänst. Inte bara går staten då in och betalar hela lönen utan den skjuter dessutom till ytterligare pengar till kommunkassan."*
+
+**Svar:** I november 2022 fanns det totalt 44 personer som var utomeuropeiskt födda och mellan 20-24 år som var sysselsatta via extratjänster. Vidare kommentarer är överflödiga.
+
+## Men Samhall då?
+
+Någon kanske har noterat att jag inte nämnt Samhall som källa till subventionerade anställningar för ensamkommande. Det beror på två saker: De insatser som vänder sig till yngre personer är främst insatsen "Lönebidrag för utveckling i anställning hos Samhall". Den ingår redan i statistiken från Arbetsförmedlingen som redovisats. Den andra stora insatsen är "Skyddat arbete" som enligt [Samhalls årsredovisning](https://samhall.se/om-samhall/samhalls-arsredovisning-finansiell-information/) i slutet av 2022 sysselsatte hela 20 500 personer. Men den insatsen vänder sig främst till äldre grupper på arbetsmarknaden. Enligt årsredovisningen var endast 5 procent, dvs drygt 1 000 personer under 30 år. Dessa 1 000 personer ska fördelas på minst tio årskullar, födda i Sverige, Övriga Europa och utanför Europa och män och kvinnor. Det blir så obetydliga nivåer så att det inte påverkar någonting.
+
+## Men alla som kom ingår inte i populationen!
+
+*Man har räknat bort alla som inte fått uppehållstillstånd! Hade man räknat med dem hade en mycket lägre andel varit sysselsatta!*
+
+Ja, självklart har man räknat bort dem som inte fått uppehållstillstånd. Hur skulle man annars gjort? Det finns ingen undersökning där man räknar andelar på personer som inte finns i landet. Övriga som ännu inte utvisats lever i limbo utan stöd eller rätt att arbeta. Det vore egendomligt att räkna in dem i populationen som utvärderas. Att personer som inte fått arbete utvisas är en del av regelverket.
+
+Däremot kan man konstatera att skillnaderna i sysselsättningsgrad för de som inte hade hotet om utvisning hängande över sig och de som fått stanna enligt gymnasielagen är liten. 82 % av de som inte hotats av utvisning har fått jobb medan motsvarande värde för de som fått stanna enligt gymnasielagen är 85 %.
+
+## Källor:
+
+Arbetsförmedlingens månadsstatistik:
+
+<https://statistik.arbetsformedlingen.se/extensions/Manadsstatistik_sid1/Manadsstatistik_sid1.html>
+
+SCB:s öppna databas om sysselsatta per födelseregion och ålder:
+
+<https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__LE__LE0105__LE0105A/LE0105Sysselsattn01N/>
+
+SCB:s BAS-statistik:
+
+<https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/sysselsattning-forvarvsarbete-och-arbetstider/befolkningens-arbetsmarknadsstatus/>

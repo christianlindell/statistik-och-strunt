@@ -1,0 +1,17 @@
+# R / RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Quarto: genererad webbplats och cache (publiceras till quarto.pub)
+/.quarto/
+/_site/
+**/*.quarto_ipynb
+
+# _freeze/ versionshanteras med flit, så att sidor med kod inte behöver köras om vid publicering
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store

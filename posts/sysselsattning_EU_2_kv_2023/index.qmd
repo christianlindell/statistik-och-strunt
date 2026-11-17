@@ -1,0 +1,11 @@
+---
+title: "Rekordhög sysselsättning för utrikesfödda i Sverige"
+author: "Christian Lindell"
+date: "2023-10-05"
+categories: [arbetsmarknad]
+image: "image.jpg"
+---
+
+Efter de senaste årens rusning av andelen sysselsatta utrikesfödda så låg sysselsättningsgraden för utrikesfödda 2 kvartalet 2023 på nästan samma nivå som för \_inrikesfödda\_ i EU som helhet!
+
+![](image.jpg)

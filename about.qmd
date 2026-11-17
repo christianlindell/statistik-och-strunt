@@ -1,0 +1,24 @@
+---
+title: "Om"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/lindellch
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/christian-lindell-80733aa9/
+    - icon: bluesky
+      text: Bluesky
+      href: https://bsky.app/profile/lindellch.bsky.social
+---
+
+Jag är en gravt medelålders man som arbetar som utredare och är intresserad av statistik och samhällsutveckling. Den här bloggen är tänkt som ett forum för att publicera korta inlägg om aktuell utveckling och för folkbildning om statistik.
+
+För närvarande är jag mest bekymrad över den till stora delar omotiverade pessimism som sprids i sociala medier angående ekonomin och utvecklingen på arbetsmarknaden, samtidigt som den motiverade pessimismen angående klimatet och miljön tonas ned.
+
+Bloggen är privat och är inte kopplad till min arbetsgivare. Dock handlar den om samma saker jag har arbetat med i mer än 30 år, så det finns en del överlappning i ämnesval mellan mitt yrkesliv och mitt bloggande.
+
+Jag finns på Twitter/X, men kommer successivt att gå över till Bluesky. Att gå in på Twitter har alltför mycket blivit som att bada i avloppsvatten.
