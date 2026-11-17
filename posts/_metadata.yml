@@ -4,8 +4,9 @@
 # (see https://quarto.org/docs/projects/code-execution.html#freeze)
 freeze: true
 
-# Enable banner style title blocks
-title-block-banner: true
+# Rubriken på vit bakgrund (tidskriftslayout), inte som färgad banner
+title-block-banner: false
+date-format: "D MMMM YYYY"
 # comments:
 #   utterances:
 #     repo:  christianlindell/statostrunt

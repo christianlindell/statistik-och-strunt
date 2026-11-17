@@ -1,1 +1,81 @@
-/* css styles */
+/* Tidskriftslayout: serifrubriker, lugn sans-serif i brödtext, tunna linjer */
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Source+Sans+3:wght@400;600&display=swap");
+
+body {
+  font-family: "Source Sans 3", system-ui, "Segoe UI", sans-serif;
+  color: #2c2c2a;
+}
+
+h1, h2, h3, h4,
+.title,
+.listing-title,
+.navbar-title {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 600;
+  color: #1c1c1a;
+}
+
+/* Meny: vit med en tunn linje under, ingen färgad banner */
+.navbar {
+  border-bottom: 1px solid #2c2c2a;
+}
+.navbar-title {
+  font-size: 1.3rem;
+}
+
+/* Inläggslistan */
+.quarto-post {
+  border-bottom: 1px solid #e1e0d9;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.quarto-post .listing-title {
+  font-size: 1.35rem;
+  line-height: 1.3;
+  margin: 0.15rem 0 0.4rem;
+}
+.quarto-post .listing-date {
+  color: #5f5e5a;
+  font-size: 0.85rem;
+}
+.quarto-post .listing-description {
+  color: #444441;
+}
+
+/* Förhandsbilder: samma storlek, beskurna, med tunn ram */
+.quarto-post .thumbnail-image {
+  width: 160px;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid #e1e0d9;
+  border-radius: 2px;
+}
+
+/* Kategorier som diskret text, inte som knappar */
+.listing-category,
+.quarto-category {
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
+  margin-right: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.72rem;
+  color: #185fa5;
+}
+
+/* Inläggssidor: rubrikblocket */
+#title-block-header .title {
+  font-size: 2.1rem;
+  line-height: 1.2;
+}
+#title-block-header {
+  border-bottom: 1px solid #e1e0d9;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Brödtext lite luftigare */
+main p {
+  line-height: 1.65;
+}

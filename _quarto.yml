@@ -6,6 +6,8 @@ website:
   title: "Statistik och strunt"
   site-url: https://lindellch.quarto.pub/statistik-och-strunt/
   navbar:
+    background: "#ffffff"
+    foreground: "#2c2c2a"
     right:
       - about.qmd
       - icon: twitter
@@ -21,6 +23,7 @@ format:
   html:
     theme: cosmo
     css: styles.css
+    lang: sv
 
 editor: visual
 
