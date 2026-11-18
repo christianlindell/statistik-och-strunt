@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -40,14 +40,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1620347b01c0f61315c2ecc68baebfe6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8ef1d6d8128e03b3726e6ac48221e748.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -97,12 +98,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -138,19 +133,18 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Webbplats">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Statistik och strunt</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Sök"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Skifta navigering" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Skifta navigering" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -178,6 +172,7 @@ window.Quarto = {
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
+            <div id="quarto-search" class="" title="Sök"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -187,9 +182,9 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Kategorier</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Allt <span class="quarto-category-count">(22)</span></div><div class="category" data-category="YXJiZXRzbWFya25hZA==">arbetsmarknad <span class="quarto-category-count">(18)</span></div><div class="category" data-category="ZGVtb2dyYWZp">demografi <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZWtvbm9taQ==">ekonomi <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cG9saXRpaw==">politik <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c29jaWFsZiVDMyVCNnJzJUMzJUE0a3Jpbmdhcg==">socialförsäkringar <span class="quarto-category-count">(3)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Kategorier</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Allt <span class="quarto-category-count">(23)</span></div><div class="category" data-category="YXJiZXRzbWFya25hZA==">arbetsmarknad <span class="quarto-category-count">(19)</span></div><div class="category" data-category="ZGVtb2dyYWZp">demografi <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZWtvbm9taQ==">ekonomi <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cG9saXRpaw==">politik <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2olQzMlQTRsdmYlQzMlQjZycyVDMyVCNnJqbmluZw==">självförsörjning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c29jaWFsZiVDMyVCNnJzJUMzJUE0a3Jpbmdhcg==">socialförsäkringar <span class="quarto-category-count">(3)</span></div></div></div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content" tabindex="-1">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -216,69 +211,104 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1779228000000" data-listing-file-modified-sort="1794929593582" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="355">
-<div class="thumbnail"><a href="./posts/den_langa_bluffen/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="0" data-categories="YXJiZXRzbWFya25hZCUyQ3NqJUMzJUE0bHZmJUMzJUI2cnMlQzMlQjZyam5pbmc=" data-listing-date-sort="1794956400000" data-listing-file-modified-sort="1795008438273" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2124">
+<div class="thumbnail"><a href="./posts/sjalvforsorjande_regso/index.html" class="no-external-icon">
+
+<img loading="lazy" src="./posts/sjalvforsorjande_regso/miniatyr.png" class="thumbnail-image" style="height: 150px;">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/sjalvforsorjande_regso/index.html" class="no-external-icon">Allt färre stadsdelar med låg andel självförsörjande</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2olQzMlQTRsdmYlQzMlQjZycyVDMyVCNnJqbmluZw=='); return false;">självförsörjning</div>
+
+</div>
+<div class="listing-description">
+<a href="./posts/sjalvforsorjande_regso/index.html" class="no-external-icon">
+<p>Andelen självförsörjande har ökat i nästan alla Sveriges stadsdelar sedan 2013 – och mest i områden där den var lägst.</p>
+</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/sjalvforsorjande_regso/index.html" class="no-external-icon">
+<div class="listing-date">
+18 november 2026
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1779228000000" data-listing-file-modified-sort="1795006660681" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="355">
+<div class="thumbnail"><a href="./posts/den_langa_bluffen/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/den_langa_bluffen/Den-langa-bluffen-Framsida-scaled.jpg" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/den_langa_bluffen/index.html" class="no-external">Den långa bluffen</a>
+<a href="./posts/den_langa_bluffen/index.html" class="no-external-icon">Den långa bluffen</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/den_langa_bluffen/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/den_langa_bluffen/index.html" class="no-external-icon">
 Nu kommer Alex Voronov och jag ut med en bok med titlen “Den långa bluffen”. För mig är det en ny upplevelse att skriva en debattbok. Jag har genom åren skrivit en mängd…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/den_langa_bluffen/index.html" class="no-external">
+<a href="./posts/den_langa_bluffen/index.html" class="no-external-icon">
 <div class="listing-date">
 20 maj 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1769900400000" data-listing-file-modified-sort="1794927981720" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="387">
-<div class="thumbnail"><a href="./posts/sys_norden/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="2" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1769900400000" data-listing-file-modified-sort="1795006660737" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="387">
+<div class="thumbnail"><a href="./posts/sys_norden/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/sys_norden/arbetmarknadstatus_norden.svg" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/sys_norden/index.html" class="no-external">Sveriges höga arbetslöshet beror inte på att få arbetar</a>
+<a href="./posts/sys_norden/index.html" class="no-external-icon">Sveriges höga arbetslöshet beror inte på att få arbetar</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/sys_norden/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/sys_norden/index.html" class="no-external-icon">
 Ofta hör man att Danmarks och Norges arbetsmarknad fungerar mycket bättre än Sveriges eftersom Sverige har mycket högre arbetslöshet. Men då ställer jag mig frågan: Hur kan…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/sys_norden/index.html" class="no-external">
+<a href="./posts/sys_norden/index.html" class="no-external-icon">
 <div class="listing-date">
 1 februari 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="YXJiZXRzbWFya25hZCUyQ2RlbW9ncmFmaQ==" data-listing-date-sort="1768345200000" data-listing-file-modified-sort="1768410495166" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="275">
-<div class="thumbnail"><a href="./posts/demografi_eu/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="3" data-categories="YXJiZXRzbWFya25hZCUyQ2RlbW9ncmFmaQ==" data-listing-date-sort="1768345200000" data-listing-file-modified-sort="1795006660675" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="275">
+<div class="thumbnail"><a href="./posts/demografi_eu/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/demografi_eu/dia_medianalder_EU_2010_24.svg" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/demografi_eu/index.html" class="no-external">Det åldrande Europa</a>
+<a href="./posts/demografi_eu/index.html" class="no-external-icon">Det åldrande Europa</a>
 </h3>
 <div class="listing-categories">
 
@@ -287,297 +317,319 @@ Ofta hör man att Danmarks och Norges arbetsmarknad fungerar mycket bättre än 
 <div class="listing-category" onclick="window.quartoListingCategory('ZGVtb2dyYWZp'); return false;">demografi</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/demografi_eu/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/demografi_eu/index.html" class="no-external-icon">
 Jag tror många inte förstått hur kraftig den demografiska utmaningen är för Europa - och stora delar av övriga världen . Går vi tillbaka till 1970 hade Sverige med sin…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/demografi_eu/index.html" class="no-external">
+<a href="./posts/demografi_eu/index.html" class="no-external-icon">
 <div class="listing-date">
 14 januari 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1768172400000" data-listing-file-modified-sort="1770105320065" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="649">
-<div class="thumbnail"><a href="./posts/foraldrad_statistik/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="4" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1768172400000" data-listing-file-modified-sort="1795006660699" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="649">
+<div class="thumbnail"><a href="./posts/foraldrad_statistik/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/foraldrad_statistik/arbetet_somalier.png" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/foraldrad_statistik/index.html" class="no-external">Kärleken till fakta som passerat bäst-före-datum</a>
+<a href="./posts/foraldrad_statistik/index.html" class="no-external-icon">Kärleken till fakta som passerat bäst-före-datum</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/foraldrad_statistik/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/foraldrad_statistik/index.html" class="no-external-icon">
 Om man är inne på X möts man ständigt av några återkommande hänvisningar till artiklar. De handlar om somalier, om hur uselt flyktingar från 2015 är integrerade och om hur…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/foraldrad_statistik/index.html" class="no-external">
+<a href="./posts/foraldrad_statistik/index.html" class="no-external-icon">
 <div class="listing-date">
 12 januari 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1731970800000" data-listing-file-modified-sort="1794926091469" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="180">
-<div class="thumbnail"><a href="./posts/sysgrad_sv_dk/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="5" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1731970800000" data-listing-file-modified-sort="1795006660738" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="180">
+<div class="thumbnail"><a href="./posts/sysgrad_sv_dk/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/sysgrad_sv_dk/sysgrad_sv_dk.png" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/sysgrad_sv_dk/index.html" class="no-external">Fungerar dansk arbetsmarknad bättre än den svenska?</a>
+<a href="./posts/sysgrad_sv_dk/index.html" class="no-external-icon">Fungerar dansk arbetsmarknad bättre än den svenska?</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/sysgrad_sv_dk/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/sysgrad_sv_dk/index.html" class="no-external-icon">
 <strong><em>Dansk arbetsmarknadspolitik beskrivs ofta som en succé jämfört med Sveriges, men stämmer det verkligen?</em></strong>
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/sysgrad_sv_dk/index.html" class="no-external">
+<a href="./posts/sysgrad_sv_dk/index.html" class="no-external-icon">
 <div class="listing-date">
 19 november 2024
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1714860000000" data-listing-file-modified-sort="1794926085719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="542">
-<div class="thumbnail"><a href="./posts/kostnader_utanforskap/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="6" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1714860000000" data-listing-file-modified-sort="1795006660708" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="542">
+<div class="thumbnail"><a href="./posts/kostnader_utanforskap/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/kostnader_utanforskap/ersattningar_och_bidrag.PNG" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/kostnader_utanforskap/index.html" class="no-external">Kostar utanförskapet 270 miljarder kronor om året?</a>
+<a href="./posts/kostnader_utanforskap/index.html" class="no-external-icon">Kostar utanförskapet 270 miljarder kronor om året?</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/kostnader_utanforskap/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/kostnader_utanforskap/index.html" class="no-external-icon">
 <strong><em>Då och då dyker uppgiften om att “utanförskapet” kostar 270 miljarder kronor om året. Men var kommer den siffran ifrån? Och vad menas med kostnad i sammanhanget?</em></strong>
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/kostnader_utanforskap/index.html" class="no-external">
+<a href="./posts/kostnader_utanforskap/index.html" class="no-external-icon">
 <div class="listing-date">
 5 maj 2024
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1707519600000" data-listing-file-modified-sort="1794926082484" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1668">
-<div class="thumbnail"><a href="./posts/forsorjning_ej_sjalvforsorjande/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="7" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1707519600000" data-listing-file-modified-sort="1795006660708" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1668">
+<div class="thumbnail"><a href="./posts/forsorjning_ej_sjalvforsorjande/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/forsorjning_ej_sjalvforsorjande/diahink-ej-sjalvf-1.svg" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/forsorjning_ej_sjalvforsorjande/index.html" class="no-external">Hur försörjer sig de ej “självförsörjande?”</a>
+<a href="./posts/forsorjning_ej_sjalvforsorjande/index.html" class="no-external-icon">Hur försörjer sig de ej “självförsörjande?”</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/forsorjning_ej_sjalvforsorjande/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/forsorjning_ej_sjalvforsorjande/index.html" class="no-external-icon">
 <strong><em>En sak som förvånar mig med debatten runt “självförsörjning” är ointresset för hur de “ej självförsörjande” faktiskt försörjer sig. Det borde vara av avgörande betydelse för…</em></strong>
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/forsorjning_ej_sjalvforsorjande/index.html" class="no-external">
+<a href="./posts/forsorjning_ej_sjalvforsorjande/index.html" class="no-external-icon">
 <div class="listing-date">
 10 februari 2024
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1705100400000" data-listing-file-modified-sort="1794926089094" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="632">
-<div class="thumbnail"><a href="./posts/matt_5/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="8" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1705100400000" data-listing-file-modified-sort="1795006660727" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="632">
+<div class="thumbnail"><a href="./posts/matt_5/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/matt_5/dia_ej_sys_5_matt.svg" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/matt_5/index.html" class="no-external">Blir allt sämre och allt fler beroende av sociala ersättningar och bidrag?</a>
+<a href="./posts/matt_5/index.html" class="no-external-icon">Blir allt sämre och allt fler beroende av sociala ersättningar och bidrag?</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/matt_5/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/matt_5/index.html" class="no-external-icon">
 De senaste åren har det varit mycket diskussion om “självförsörjande” och sysselsättning. Entreprenörskapsforum fick en del uppmärksamhet för en rapport om…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/matt_5/index.html" class="no-external">
+<a href="./posts/matt_5/index.html" class="no-external-icon">
 <div class="listing-date">
 13 januari 2024
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1702249200000" data-listing-file-modified-sort="1794926090235" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1782">
-<div class="thumbnail"><a href="./posts/samnytt_ensamkommande/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="9" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1702249200000" data-listing-file-modified-sort="1795006660731" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1782">
+<div class="thumbnail"><a href="./posts/samnytt_ensamkommande/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/samnytt_ensamkommande/rapport_ensamkommande.PNG" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/samnytt_ensamkommande/index.html" class="no-external">Samnytt och de ensamkommande</a>
+<a href="./posts/samnytt_ensamkommande/index.html" class="no-external-icon">Samnytt och de ensamkommande</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/samnytt_ensamkommande/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/samnytt_ensamkommande/index.html" class="no-external-icon">
 <strong><em>SD närstående Samnytt har “granskat” SCB:s rapport om hur det gått för de ensamkommande flyktingbarn som kom 2015. Det mesta materialet verkar ha hämtats från en…</em></strong><strong><em></em></strong>
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/samnytt_ensamkommande/index.html" class="no-external">
+<a href="./posts/samnytt_ensamkommande/index.html" class="no-external-icon">
 <div class="listing-date">
 11 december 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1701817200000" data-listing-file-modified-sort="1794926077715" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1150">
-<div class="thumbnail"><a href="./posts/ensamkommande/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="10" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1701817200000" data-listing-file-modified-sort="1795006660681" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1150">
+<div class="thumbnail"><a href="./posts/ensamkommande/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/ensamkommande/arbetsmarknadsstatus.PNG" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/ensamkommande/index.html" class="no-external">Besvikelsen över hur bra det gått för ensamkommande flyktingar</a>
+<a href="./posts/ensamkommande/index.html" class="no-external-icon">Besvikelsen över hur bra det gått för ensamkommande flyktingar</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/ensamkommande/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/ensamkommande/index.html" class="no-external-icon">
 Den 28 november släppte SCB sin uppföljning av vad ensamkommande flyktingbarn som sökte asyl 2015 gjorde i november 2022. Med tanke på den enorma demonisering gruppen har…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/ensamkommande/index.html" class="no-external">
+<a href="./posts/ensamkommande/index.html" class="no-external-icon">
 <div class="listing-date">
 6 december 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1699311600000" data-listing-file-modified-sort="1794926079230" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="995">
-<div class="thumbnail"><a href="./posts/entimmesjobb/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="11" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1699311600000" data-listing-file-modified-sort="1795006660693" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="995">
+<div class="thumbnail"><a href="./posts/entimmesjobb/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/entimmesjobb/sysselsatta_utom_eu27_2023kv2.svg" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/entimmesjobb/index.html" class="no-external">Myten om de bidragsfinansierade 1-timmesjobben</a>
+<a href="./posts/entimmesjobb/index.html" class="no-external-icon">Myten om de bidragsfinansierade 1-timmesjobben</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/entimmesjobb/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/entimmesjobb/index.html" class="no-external-icon">
 Trots att många verkar tro att integrationen på arbetsmarknaden går sämre och sämre så rusar andelen sysselsatta utrikesfödda. Framför allt är det de utrikesfödda kvinnornas…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/entimmesjobb/index.html" class="no-external">
+<a href="./posts/entimmesjobb/index.html" class="no-external-icon">
 <div class="listing-date">
 7 november 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1698706800000" data-listing-file-modified-sort="1794928208718" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="271">
-<div class="thumbnail"><a href="./posts/sossematt/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="12" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1698706800000" data-listing-file-modified-sort="1795006660732" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="271">
+<div class="thumbnail"><a href="./posts/sossematt/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/sossematt/sossematt1.PNG" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/sossematt/index.html" class="no-external">Är “sysselsättning”” ett sossemått?</a>
+<a href="./posts/sossematt/index.html" class="no-external-icon">Är “sysselsättning”” ett sossemått?</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/sossematt/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/sossematt/index.html" class="no-external-icon">
 Den här bloggen är till stora delar irritationsdriven, vilket innebär att jag skriver om saker som irriterar mig. En av de saker som väcker min professionella missaktning är…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/sossematt/index.html" class="no-external">
+<a href="./posts/sossematt/index.html" class="no-external-icon">
 <div class="listing-date">
 31 oktober 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="c29jaWFsZiVDMyVCNnJzJUMzJUE0a3Jpbmdhcg==" data-listing-date-sort="1698271200000" data-listing-file-modified-sort="1794926084062" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="209">
-<div class="thumbnail"><a href="./posts/inkomster/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="13" data-categories="c29jaWFsZiVDMyVCNnJzJUMzJUE0a3Jpbmdhcg==" data-listing-date-sort="1698271200000" data-listing-file-modified-sort="1795006660708" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="209">
+<div class="thumbnail"><a href="./posts/inkomster/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/inkomster/inkomster_raks.png" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/inkomster/index.html" class="no-external">Går vi under av alla bidragstagare?</a>
+<a href="./posts/inkomster/index.html" class="no-external-icon">Går vi under av alla bidragstagare?</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('c29jaWFsZiVDMyVCNnJzJUMzJUE0a3Jpbmdhcg=='); return false;">socialförsäkringar</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/inkomster/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/inkomster/index.html" class="no-external-icon">
 Jag slås ofta av att människors förmåga att bedöma storheter är ganska begränsad när de lämnar sitt kompetensområde. Ett exempel är en konversation på Twitter jag hade…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/inkomster/index.html" class="no-external">
+<a href="./posts/inkomster/index.html" class="no-external-icon">
 <div class="listing-date">
 26 oktober 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="cG9saXRpayUyQ3NvY2lhbGYlQzMlQjZycyVDMyVBNGtyaW5nYXI=" data-listing-date-sort="1697580000000" data-listing-file-modified-sort="1794926087719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="512">
-<div class="thumbnail"><a href="./posts/malmo/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="14" data-categories="cG9saXRpayUyQ3NvY2lhbGYlQzMlQjZycyVDMyVBNGtyaW5nYXI=" data-listing-date-sort="1697580000000" data-listing-file-modified-sort="1795006660723" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="512">
+<div class="thumbnail"><a href="./posts/malmo/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/malmo/malmo_riket_bidrag2014_22.svg" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/malmo/index.html" class="no-external">“Men Malmö då?”</a>
+<a href="./posts/malmo/index.html" class="no-external-icon">“Men Malmö då?”</a>
 </h3>
 <div class="listing-categories">
 
@@ -586,228 +638,246 @@ Jag slås ofta av att människors förmåga att bedöma storheter är ganska beg
 <div class="listing-category" onclick="window.quartoListingCategory('c29jaWFsZiVDMyVCNnJzJUMzJUE0a3Jpbmdhcg=='); return false;">socialförsäkringar</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/malmo/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/malmo/index.html" class="no-external-icon">
 Ofta när man försöker bemöta villfarelser om statistik och har postat definitioner av sysselsättning och visat att Sverige faktiskt är ganska bra på att få in utrikesfödda…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/malmo/index.html" class="no-external">
+<a href="./posts/malmo/index.html" class="no-external-icon">
 <div class="listing-date">
 18 oktober 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="c29jaWFsZiVDMyVCNnJzJUMzJUE0a3Jpbmdhcg==" data-listing-date-sort="1697407200000" data-listing-file-modified-sort="1794926075276" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="156">
-<div class="thumbnail"><a href="./posts/bidrag/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="15" data-categories="c29jaWFsZiVDMyVCNnJzJUMzJUE0a3Jpbmdhcg==" data-listing-date-sort="1697407200000" data-listing-file-modified-sort="1795006660675" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="156">
+<div class="thumbnail"><a href="./posts/bidrag/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/bidrag/bidrag.png" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/bidrag/index.html" class="no-external">Andelen försörjda av sociala ersättningar och bidrag den lägsta på nästan 50 år</a>
+<a href="./posts/bidrag/index.html" class="no-external-icon">Andelen försörjda av sociala ersättningar och bidrag den lägsta på nästan 50 år</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('c29jaWFsZiVDMyVCNnJzJUMzJUE0a3Jpbmdhcg=='); return false;">socialförsäkringar</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/bidrag/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/bidrag/index.html" class="no-external-icon">
 Förra året var det den lägsta andelen av befolkningen som försörjdes av sociala ersättningar och bidrag på nästan 50 år. År 2022 var det 11,9% av befolkningen mellan 20-64…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/bidrag/index.html" class="no-external">
+<a href="./posts/bidrag/index.html" class="no-external-icon">
 <div class="listing-date">
 16 oktober 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1697148000000" data-listing-file-modified-sort="1794926089704" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="410">
-<div class="thumbnail"><a href="./posts/neets/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="16" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1697148000000" data-listing-file-modified-sort="1795006660730" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="410">
+<div class="thumbnail"><a href="./posts/neets/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/neets/arblosa_1524.svg" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/neets/index.html" class="no-external">Tror du att det är lätt att tolka ungdomsarbetslöshet?</a>
+<a href="./posts/neets/index.html" class="no-external-icon">Tror du att det är lätt att tolka ungdomsarbetslöshet?</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/neets/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/neets/index.html" class="no-external-icon">
 Ganska ofta ser man människor som skriver att “sysselsättning” är ett värdelöst mått och att vi borde mäta arbetslöshet istället”. Se ett exempel nedan:
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/neets/index.html" class="no-external">
+<a href="./posts/neets/index.html" class="no-external-icon">
 <div class="listing-date">
 13 oktober 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1696975200000" data-listing-file-modified-sort="1794926092985" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="928">
-<div class="thumbnail"><a href="./posts/vad_ar_sysselsattning/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="17" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1696975200000" data-listing-file-modified-sort="1795006660744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="928">
+<div class="thumbnail"><a href="./posts/vad_ar_sysselsattning/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/vad_ar_sysselsattning/dia_bakgrund_reg_abs_tot.png" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/vad_ar_sysselsattning/index.html" class="no-external">“Sysselsättning” är samma sak som “förvärvsarbete”</a>
+<a href="./posts/vad_ar_sysselsattning/index.html" class="no-external-icon">“Sysselsättning” är samma sak som “förvärvsarbete”</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/vad_ar_sysselsattning/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/vad_ar_sysselsattning/index.html" class="no-external-icon">
 Det cirkulerar väldigt många okunniga kommentarer om vad “sysselsättning” är i arbetsmarknadsstatistiken. Vi tar det från början: <em>sysselsättning = förvärvsarbete</em>. För att…<em></em><em></em><em></em>
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/vad_ar_sysselsattning/index.html" class="no-external">
+<a href="./posts/vad_ar_sysselsattning/index.html" class="no-external-icon">
 <div class="listing-date">
 11 oktober 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1696802400000" data-listing-file-modified-sort="1794926086391" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="563">
-<div class="thumbnail"><a href="./posts/lita_inte_pa_trollen/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="18" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1696802400000" data-listing-file-modified-sort="1795006660708" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="563">
+<div class="thumbnail"><a href="./posts/lita_inte_pa_trollen/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/lita_inte_pa_trollen/flyktinglogn1.PNG" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/lita_inte_pa_trollen/index.html" class="no-external">Hur använder man trollen till sin fördel?</a>
+<a href="./posts/lita_inte_pa_trollen/index.html" class="no-external-icon">Hur använder man trollen till sin fördel?</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/lita_inte_pa_trollen/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/lita_inte_pa_trollen/index.html" class="no-external-icon">
 Sociala medier har blivit en lekstuga för personer som gör allt för att öka motsättningar och spänningar i samhället. Konton som oftast är anonyma med många siffror i…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/lita_inte_pa_trollen/index.html" class="no-external">
+<a href="./posts/lita_inte_pa_trollen/index.html" class="no-external-icon">
 <div class="listing-date">
 9 oktober 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1696543200000" data-listing-file-modified-sort="1794926074322" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="97">
-<div class="thumbnail"><a href="./posts/arbetslosas_inkomster/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="19" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1696543200000" data-listing-file-modified-sort="1795006660674" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="97">
+<div class="thumbnail"><a href="./posts/arbetslosas_inkomster/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/arbetslosas_inkomster/hink_alosa.svg" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/arbetslosas_inkomster/index.html" class="no-external">Hur försörjer sig arbetslösa?</a>
+<a href="./posts/arbetslosas_inkomster/index.html" class="no-external-icon">Hur försörjer sig arbetslösa?</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/arbetslosas_inkomster/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/arbetslosas_inkomster/index.html" class="no-external-icon">
 I SCB:s nya statistik över Befolkningens arbetsmarknadsstatus (BAS) kan man se vad människor med olika arbetsmarknadsstatus (till exempel “sysselsatta” eller “arbetslösa”)…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/arbetslosas_inkomster/index.html" class="no-external">
+<a href="./posts/arbetslosas_inkomster/index.html" class="no-external-icon">
 <div class="listing-date">
 6 oktober 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1696456800000" data-listing-file-modified-sort="1794926074791" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="173">
-<div class="thumbnail"><a href="./posts/arbetsloshet_ej_arbetande/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="20" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1696456800000" data-listing-file-modified-sort="1795006660675" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="173">
+<div class="thumbnail"><a href="./posts/arbetsloshet_ej_arbetande/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/arbetsloshet_ej_arbetande/image.png" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/arbetsloshet_ej_arbetande/index.html" class="no-external">“Arbetslös” är inte samma sak som att “inte arbeta”</a>
+<a href="./posts/arbetsloshet_ej_arbetande/index.html" class="no-external-icon">“Arbetslös” är inte samma sak som att “inte arbeta”</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/arbetsloshet_ej_arbetande/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/arbetsloshet_ej_arbetande/index.html" class="no-external-icon">
 Väldigt många kan inte skilja mellan “arbetslöshet” och “människor som inte arbetar”. Så här är det: För att vara arbetslös måste man dels sakna arbete och dels vara aktivt…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/arbetsloshet_ej_arbetande/index.html" class="no-external">
+<a href="./posts/arbetsloshet_ej_arbetande/index.html" class="no-external-icon">
 <div class="listing-date">
 5 oktober 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-categories="ZWtvbm9taQ==" data-listing-date-sort="1696456800000" data-listing-file-modified-sort="1794926084734" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="167">
-<div class="thumbnail"><a href="./posts/konkurser/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="21" data-categories="ZWtvbm9taQ==" data-listing-date-sort="1696456800000" data-listing-file-modified-sort="1795006660708" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="167">
+<div class="thumbnail"><a href="./posts/konkurser/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/konkurser/anst_per_ftg.jpg" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/konkurser/index.html" class="no-external">Konkurserna ökar, men få anställda drabbas</a>
+<a href="./posts/konkurser/index.html" class="no-external-icon">Konkurserna ökar, men få anställda drabbas</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('ZWtvbm9taQ=='); return false;">ekonomi</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/konkurser/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/konkurser/index.html" class="no-external-icon">
 Det skrivs en hel del om de ökande konkurserna i massmedia. Men jag är lite misstänksam mot sådan statistik. Det är nästan alltid de stora kommersiella företagsregistren som…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/konkurser/index.html" class="no-external">
+<a href="./posts/konkurser/index.html" class="no-external-icon">
 <div class="listing-date">
 5 oktober 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1696456800000" data-listing-file-modified-sort="1794926092079" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
-<div class="thumbnail"><a href="./posts/sysselsattning_EU_2_kv_2023/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="22" data-categories="YXJiZXRzbWFya25hZA==" data-listing-date-sort="1696456800000" data-listing-file-modified-sort="1795006660740" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+<div class="thumbnail"><a href="./posts/sysselsattning_EU_2_kv_2023/index.html" class="no-external-icon">
 
 <img loading="lazy" src="./posts/sysselsattning_EU_2_kv_2023/image.jpg" class="thumbnail-image" style="height: 150px;">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/sysselsattning_EU_2_kv_2023/index.html" class="no-external">Rekordhög sysselsättning för utrikesfödda i Sverige</a>
+<a href="./posts/sysselsattning_EU_2_kv_2023/index.html" class="no-external-icon">Rekordhög sysselsättning för utrikesfödda i Sverige</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YXJiZXRzbWFya25hZA=='); return false;">arbetsmarknad</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/sysselsattning_EU_2_kv_2023/index.html" class="no-external">
+<div class="listing-description">
+<a href="./posts/sysselsattning_EU_2_kv_2023/index.html" class="no-external-icon">
 Efter de senaste årens rusning av andelen sysselsatta utrikesfödda så låg sysselsättningsgraden för utrikesfödda 2 kvartalet 2023 på nästan samma nivå som för _inrikesfödda_…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./posts/sysselsattning_EU_2_kv_2023/index.html" class="no-external">
+<a href="./posts/sysselsattning_EU_2_kv_2023/index.html" class="no-external-icon">
 <div class="listing-date">
 5 oktober 2023
 </div>
@@ -895,7 +965,8 @@ Efter de senaste årens rusning av andelen sysselsatta utrikesfödda så låg sy
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -904,8 +975,69 @@ Efter de senaste årens rusning av andelen sysselsatta utrikesfödda så låg sy
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -919,6 +1051,7 @@ Efter de senaste årens rusning av andelen sysselsatta utrikesfödda så låg sy
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -1081,44 +1214,54 @@ Efter de senaste årens rusning av andelen sysselsatta utrikesfödda så låg sy
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -1216,6 +1359,9 @@ Efter de senaste årens rusning av andelen sysselsatta utrikesfödda så låg sy
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Rullbar kod","output":"Rullbara utdata"};
   </script>
 </div> <!-- /content -->
 
