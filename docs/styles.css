@@ -74,6 +74,29 @@ div.quarto-post .thumbnail img.thumbnail-image {
   margin-bottom: 1.5rem;
 }
 
+/* Faktaruta under kartor ("Så använder du kartan"), som i boken Den långa bluffen. Innehållet
+   fälls ut och ihop med pilen framför rubriken (<details>) och är stängt från början. */
+.faktabox {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  background: #f2f2f2;
+  border-radius: 4px;
+}
+.faktabox summary {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1c1c1a;
+  cursor: pointer;
+}
+.faktabox details[open] > summary {
+  margin-bottom: 0.75rem;
+}
+.faktabox > :last-child,
+.faktabox details > :last-child {
+  margin-bottom: 0;
+}
+
 /* Brödtext lite luftigare */
 main p {
   line-height: 1.65;
