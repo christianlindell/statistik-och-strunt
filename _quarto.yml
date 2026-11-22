@@ -1,10 +1,14 @@
 project:
   type: website
   output-dir: docs
+  # Webbplatsen publiceras via GitHub Pages (docs/) på egen domän. CNAME i roten kopieras till
+  # docs/ vid varje rendering, så att domänen inte försvinner.
+  resources:
+    - CNAME
 
 website:
   title: "Statistik och strunt"
-  site-url: https://lindellch.quarto.pub/statistik-och-strunt/
+  site-url: https://statistikochstrunt.se/
   navbar:
     background: "#ffffff"
     foreground: "#2c2c2a"
