@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Christian Lindell">
+<meta name="dcterms.date" content="2026-11-22">
+<meta name="description" content="Riksdagsvalet 2026 uppdelat på SKR:s kommungrupper: V och MP är storstadspartier, SD och KD är starkast utanför storstäderna – men alla partier får huvuddelen av sina röster från städerna och deras pendlingskommuner.">
+
+<title>Var får partierna sina röster? – Statistik och strunt</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-8ef1d6d8128e03b3726e6ac48221e748.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Inget resultat",
+    "search-matching-documents-text": "matchande dokument",
+    "search-copy-link-title": "Kopiera länk för att söka",
+    "search-hide-matches-text": "Göm ytterligare resultat",
+    "search-more-match-text": "annat resultat i detta dokument",
+    "search-more-matches-text": "fler resultat i detta dokument",
+    "search-clear-button-title": "Rensa",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Avbryt",
+    "search-submit-button-title": "Verkställ",
+    "search-label": "Sök"
+  }
+}</script>
+<script src="../../site_libs/d3-7.9.0/d3.v7.min.js"></script>
+
+<script src="../../site_libs/vgr-d3-core-0.1.0/vgr_core.js"></script>
+
+<script src="../../site_libs/vgr-d3-stapeldiagram-0.1.0/stapeldiagram.js"></script>
+
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Webbplats">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Statistik och strunt</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Skifta navigering" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">Om</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://twitter.com/lindellch"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text">Twitter</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.linkedin.com/in/christian-lindell-80733aa9/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text">LinkedIn</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://bsky.app/profile/lindellch.bsky.social"> <i class="bi bi-bluesky" role="img">
+</i> 
+<span class="menu-text">Bluesky</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+            <div id="quarto-search" class="" title="Sök"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Var får partierna sina röster?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">val</div>
+    <div class="quarto-category">kommuner</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Riksdagsvalet 2026 uppdelat på SKR:s kommungrupper: V och MP är storstadspartier, SD och KD är starkast utanför storstäderna – men alla partier får huvuddelen av sina röster från städerna och deras pendlingskommuner.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Författare</div>
+    <div class="quarto-title-meta-contents">
+             <p>Christian Lindell </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Utgiven</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">22 november 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong><em>Det talas ofta om en klyfta mellan stad och land i svensk politik. Valresultatet 2026 bekräftar att partierna är olika starka i olika delar av landet. Vänsterpartiet och Miljöpartiet får omkring 70 procent större andel av rösterna i storstäderna än i landet som helhet, och Sverigedemokraterna är mer än dubbelt så starka i pendlingskommunerna kring de större städerna som i storstäderna. Men skillnaderna ska inte överdrivas. Alla partier, också SD och KD, får mellan två tredjedelar och fyra femtedelar av sina röster från storstäderna, de större städerna och deras pendlingskommuner.</em></strong></p>
+<p>Jag har delat in landets 290 kommuner efter Sveriges Kommuner och Regioners (SKR) kommungruppsindelning från 2023. Den sorterar kommunerna i nio grupper efter hur stora de är och hur mycket invånarna pendlar till andra kommuner. Grupperna är samlade i tre huvudgrupper:</p>
+<ul>
+<li><em>A. Storstäder och storstadsnära kommuner:</em> de tre storstäderna Stockholm, Göteborg och Malmö (A1) och 43 pendlingskommuner runt dem (A2).</li>
+<li><em>B. Större städer och kommuner nära större stad:</em> 23 större städer som Uppsala, Linköping och Borås (B3), 63 pendlingskommuner nära en större stad (B4) och 24 kommuner nära en större stad där färre pendlar (B5).</li>
+<li><em>C. Mindre städer/tätorter och landsbygdskommuner:</em> 27 mindre städer (C6), 51 pendlingskommuner nära en mindre tätort (C7), 35 landsbygdskommuner (C8) och 21 landsbygdskommuner med besöksnäring, till exempel Åre och Båstad (C9).</li>
+</ul>
+<p>Valresultatet kommer från Valmyndighetens slutliga resultat för riksdagsvalet. Jag har summerat rösterna i varje kommungrupp och räknat ut partiernas andel av de giltiga rösterna där. För jämförelsen med 2022 använder jag samma kommungruppsindelning båda åren.</p>
+<section id="partiernas-stöd-i-olika-kommungrupper" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="partiernas-stöd-i-olika-kommungrupper">Partiernas stöd i olika kommungrupper</h2>
+<p>Diagrammet visar partiernas andel av rösterna i varje kommungrupp 2026. Det mörka strecket på varje stapel är partiets andel i hela riket. Ligger stapeln över strecket är partiet överrepresenterat i kommungruppen, ligger den under är partiet underrepresenterat.</p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-page">
+<div id="vgrd3-1795344986916-1" class="vgr-d3-container"></div>
+<script type="application/json" id="vgrd3-1795344986916-1-spec">{"typ":"stapeldiagram","js_fil":"stapeldiagram","empty":false,"width":1100,"height":900,"font":"'Verdana', sans-serif","horizontal":false,"bar_type":"grouped","bar_width":0.8,"text":{"title":[],"subtitle":["Partiernas andel av de giltiga rösterna per kommungrupp, riksdagsvalet 2026 (%). Strecket = andel i riket."],"caption":["Källa: Valmyndigheten (slutligt valresultat riksdagen 2026) och SKR (kommungruppsindelning 2023). Bearbetning: Christian Lindell."],"title_size":21.3333333333333,"subtitle_size":17.3333333333333,"caption_size":13.3333333333333,"x_axis_title":null,"y_axis_title":"Procent av giltiga röster","x_axis_title_size":14.6666666666667,"y_axis_title_size":14.6666666666667,"x_axis_title_angle":0,"x_axis_text_size":14.6666666666667,"y_axis_text_size":14.6666666666667,"facet_title_size":16},"x":{"type":"discrete","levels":["V","MP","S","C","L","M","KD","SD","Övriga"],"domain":null,"ticks":[],"tick_labels":[],"minor":null,"angle":45,"number_format":"whole"},"y":{"min":null,"max":null,"breaks":null,"n_breaks":4,"auto":true,"expand":[0.1,0.25]},"facets":{"levels":["A1 Storstäder","A2 Pendlingskommun nära storstad","B3 Större stad","B4 Pendlingskommun nära större stad","B5 Lågpendlingskommun nära större stad","C6 Mindre stad/tätort","C7 Pendlingskommun nära mindre tätort","C8 Landsbygdskommun","C9 Landsbygdskommun med besöksnäring"],"ncol":3,"scales":"fixed","wrapped":false},"groups":[{"key":"V","label":"V","color":"#8B0000"},{"key":"MP","label":"MP","color":"#83CF39"},{"key":"S","label":"S","color":"#E8112D"},{"key":"C","label":"C","color":"#009933"},{"key":"L","label":"L","color":"#006AB3"},{"key":"M","label":"M","color":"#52BDEC"},{"key":"KD","label":"KD","color":"#000077"},{"key":"SD","label":"SD","color":"#DDDD00"},{"key":"Övriga","label":"Övriga","color":"#9B9B9B"}],"has_groups":true,"legend":{"position":"none","title":"parti","text_size":14.6666666666667,"title_size":14.6666666666667},"rows":[{"k":"__alla","f":"A1 Storstäder","x":"S","g":"S","v":27.0366193791761,"o":1,"xt":"S","ref":28.0163855431657,"tt":["28,0","336 856"]},{"k":"__alla","f":"A1 Storstäder","x":"C","g":"C","v":8.11292814575516,"o":2,"xt":"C","ref":7.03043947708945,"tt":["7,0","101 081"]},{"k":"__alla","f":"A1 Storstäder","x":"KD","g":"KD","v":4.08050243794771,"o":3,"xt":"KD","ref":6.16910794335633,"tt":["6,2","50 840"]},{"k":"__alla","f":"A1 Storstäder","x":"L","g":"L","v":6.32148805104641,"o":4,"xt":"L","ref":5.33713763380451,"tt":["5,3","78 761"]},{"k":"__alla","f":"A1 Storstäder","x":"MP","g":"MP","v":10.1831972229468,"o":5,"xt":"MP","ref":6.1220738333568,"tt":["6,1","126 875"]},{"k":"__alla","f":"A1 Storstäder","x":"M","g":"M","v":18.3686016413508,"o":6,"xt":"M","ref":19.8516748384061,"tt":["19,9","228 859"]},{"k":"__alla","f":"A1 Storstäder","x":"SD","g":"SD","v":10.2428316311174,"o":7,"xt":"SD","ref":17.4844538450274,"tt":["17,5","127 618"]},{"k":"__alla","f":"A1 Storstäder","x":"V","g":"V","v":14.3780725164035,"o":8,"xt":"V","ref":8.40468366938168,"tt":["8,4","179 140"]},{"k":"__alla","f":"A1 Storstäder","x":"Övriga","g":"Övriga","v":1.27575897425607,"o":9,"xt":"Övriga","ref":1.58404321641202,"tt":["1,6","15 895"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"S","g":"S","v":24.7528930943338,"o":10,"xt":"S","ref":28.0163855431657,"tt":["28,0","312 032"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"C","g":"C","v":7.78811157967552,"o":11,"xt":"C","ref":7.03043947708945,"tt":["7,0","98 176"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"KD","g":"KD","v":5.99180699800411,"o":12,"xt":"KD","ref":6.16910794335633,"tt":["6,2","75 532"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"L","g":"L","v":6.76509692302322,"o":13,"xt":"L","ref":5.33713763380451,"tt":["5,3","85 280"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"MP","g":"MP","v":5.6103183593688,"o":14,"xt":"MP","ref":6.1220738333568,"tt":["6,1","70 723"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"M","g":"M","v":24.1981519735235,"o":15,"xt":"M","ref":19.8516748384061,"tt":["19,9","305 039"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"SD","g":"SD","v":16.3728355338937,"o":16,"xt":"SD","ref":17.4844538450274,"tt":["17,5","206 394"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"V","g":"V","v":7.12746749929398,"o":17,"xt":"V","ref":8.40468366938168,"tt":["8,4","89 848"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"Övriga","g":"Övriga","v":1.39331803888344,"o":18,"xt":"Övriga","ref":1.58404321641202,"tt":["1,6","17 564"]},{"k":"__alla","f":"B3 Större stad","x":"S","g":"S","v":29.7966412621885,"o":19,"xt":"S","ref":28.0163855431657,"tt":["28,0","517 166"]},{"k":"__alla","f":"B3 Större stad","x":"C","g":"C","v":6.63168653624114,"o":20,"xt":"C","ref":7.03043947708945,"tt":["7,0","115 103"]},{"k":"__alla","f":"B3 Större stad","x":"KD","g":"KD","v":6.07811934650494,"o":21,"xt":"KD","ref":6.16910794335633,"tt":["6,2","105 495"]},{"k":"__alla","f":"B3 Större stad","x":"L","g":"L","v":4.89694938847188,"o":22,"xt":"L","ref":5.33713763380451,"tt":["5,3","84 994"]},{"k":"__alla","f":"B3 Större stad","x":"MP","g":"MP","v":6.37305174078675,"o":23,"xt":"MP","ref":6.1220738333568,"tt":["6,1","110 614"]},{"k":"__alla","f":"B3 Större stad","x":"M","g":"M","v":19.5241903330852,"o":24,"xt":"M","ref":19.8516748384061,"tt":["19,9","338 872"]},{"k":"__alla","f":"B3 Större stad","x":"SD","g":"SD","v":16.2167300818367,"o":25,"xt":"SD","ref":17.4844538450274,"tt":["17,5","281 466"]},{"k":"__alla","f":"B3 Större stad","x":"V","g":"V","v":8.82279397021984,"o":26,"xt":"V","ref":8.40468366938168,"tt":["8,4","153 133"]},{"k":"__alla","f":"B3 Större stad","x":"Övriga","g":"Övriga","v":1.65983734066506,"o":27,"xt":"Övriga","ref":1.58404321641202,"tt":["1,6","28 809"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"S","g":"S","v":26.4892087615748,"o":28,"xt":"S","ref":28.0163855431657,"tt":["28,0","177 990"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"C","g":"C","v":6.23528501311141,"o":29,"xt":"C","ref":7.03043947708945,"tt":["7,0","41 897"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"KD","g":"KD","v":7.20844606761974,"o":30,"xt":"KD","ref":6.16910794335633,"tt":["6,2","48 436"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"L","g":"L","v":4.7793384469308,"o":31,"xt":"L","ref":5.33713763380451,"tt":["5,3","32 114"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"MP","g":"MP","v":4.07287025213786,"o":32,"xt":"MP","ref":6.1220738333568,"tt":["6,1","27 367"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"M","g":"M","v":19.5251319326005,"o":33,"xt":"M","ref":19.8516748384061,"tt":["19,9","131 196"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"SD","g":"SD","v":24.4099866951218,"o":34,"xt":"SD","ref":17.4844538450274,"tt":["17,5","164 019"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"V","g":"V","v":5.44845178246673,"o":35,"xt":"V","ref":8.40468366938168,"tt":["8,4","36 610"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"Övriga","g":"Övriga","v":1.8312810484363,"o":36,"xt":"Övriga","ref":1.58404321641202,"tt":["1,6","12 305"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"S","g":"S","v":29.5692267486357,"o":37,"xt":"S","ref":28.0163855431657,"tt":["28,0","95 042"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"C","g":"C","v":5.73513947396258,"o":38,"xt":"C","ref":7.03043947708945,"tt":["7,0","18 434"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"KD","g":"KD","v":7.06610001804481,"o":39,"xt":"KD","ref":6.16910794335633,"tt":["6,2","22 712"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"L","g":"L","v":4.35160007715713,"o":40,"xt":"L","ref":5.33713763380451,"tt":["5,3","13 987"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"MP","g":"MP","v":3.58687333163256,"o":41,"xt":"MP","ref":6.1220738333568,"tt":["6,1","11 529"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"M","g":"M","v":17.9651672878646,"o":42,"xt":"M","ref":19.8516748384061,"tt":["19,9","57 744"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"SD","g":"SD","v":23.3745667689206,"o":43,"xt":"SD","ref":17.4844538450274,"tt":["17,5","75 131"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"V","g":"V","v":6.34368524867619,"o":44,"xt":"V","ref":8.40468366938168,"tt":["8,4","20 390"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"Övriga","g":"Övriga","v":2.00764104510581,"o":45,"xt":"Övriga","ref":1.58404321641202,"tt":["1,6","6 453"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"S","g":"S","v":31.3398454085387,"o":46,"xt":"S","ref":28.0163855431657,"tt":["28,0","237 677"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"C","g":"C","v":6.77847428618144,"o":47,"xt":"C","ref":7.03043947708945,"tt":["7,0","51 407"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"KD","g":"KD","v":6.86998441426925,"o":48,"xt":"KD","ref":6.16910794335633,"tt":["6,2","52 101"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"L","g":"L","v":4.37824537900225,"o":49,"xt":"L","ref":5.33713763380451,"tt":["5,3","33 204"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"MP","g":"MP","v":4.79557903231336,"o":50,"xt":"MP","ref":6.1220738333568,"tt":["6,1","36 369"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"M","g":"M","v":18.9954719628263,"o":51,"xt":"M","ref":19.8516748384061,"tt":["19,9","144 059"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"SD","g":"SD","v":19.1803382446406,"o":52,"xt":"SD","ref":17.4844538450274,"tt":["17,5","145 461"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"V","g":"V","v":6.06524909478814,"o":53,"xt":"V","ref":8.40468366938168,"tt":["8,4","45 998"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"Övriga","g":"Övriga","v":1.59681217743998,"o":54,"xt":"Övriga","ref":1.58404321641202,"tt":["1,6","12 110"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"S","g":"S","v":27.3276761630998,"o":55,"xt":"S","ref":28.0163855431657,"tt":["28,0","97 160"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"C","g":"C","v":6.01822032587326,"o":56,"xt":"C","ref":7.03043947708945,"tt":["7,0","21 397"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"KD","g":"KD","v":8.06667097939174,"o":57,"xt":"KD","ref":6.16910794335633,"tt":["6,2","28 680"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"L","g":"L","v":4.35257089979383,"o":58,"xt":"L","ref":5.33713763380451,"tt":["5,3","15 475"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"MP","g":"MP","v":3.8513572427061,"o":59,"xt":"MP","ref":6.1220738333568,"tt":["6,1","13 693"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"M","g":"M","v":18.0442541845153,"o":60,"xt":"M","ref":19.8516748384061,"tt":["19,9","64 154"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"SD","g":"SD","v":24.6067216632868,"o":61,"xt":"SD","ref":17.4844538450274,"tt":["17,5","87 486"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"V","g":"V","v":5.80642802296245,"o":62,"xt":"V","ref":8.40468366938168,"tt":["8,4","20 644"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"Övriga","g":"Övriga","v":1.9261005183708,"o":63,"xt":"Övriga","ref":1.58404321641202,"tt":["1,6","6 848"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"S","g":"S","v":31.0227963751242,"o":64,"xt":"S","ref":28.0163855431657,"tt":["28,0","83 666"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"C","g":"C","v":6.52447977693072,"o":65,"xt":"C","ref":7.03043947708945,"tt":["7,0","17 596"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"KD","g":"KD","v":7.92682022455245,"o":66,"xt":"KD","ref":6.16910794335633,"tt":["6,2","21 378"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"L","g":"L","v":3.7157201548433,"o":67,"xt":"L","ref":5.33713763380451,"tt":["5,3","10 021"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"MP","g":"MP","v":3.40314136125654,"o":68,"xt":"MP","ref":6.1220738333568,"tt":["6,1","9 178"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"M","g":"M","v":16.6623407442564,"o":69,"xt":"M","ref":19.8516748384061,"tt":["19,9","44 937"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"SD","g":"SD","v":23.0095813001498,"o":70,"xt":"SD","ref":17.4844538450274,"tt":["17,5","62 055"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"V","g":"V","v":5.94530056508906,"o":71,"xt":"V","ref":8.40468366938168,"tt":["8,4","16 034"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"Övriga","g":"Övriga","v":1.78981949779749,"o":72,"xt":"Övriga","ref":1.58404321641202,"tt":["1,6","4 827"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"S","g":"S","v":25.8946814751876,"o":73,"xt":"S","ref":28.0163855431657,"tt":["28,0","38 400"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"C","g":"C","v":7.20802735125731,"o":74,"xt":"C","ref":7.03043947708945,"tt":["7,0","10 689"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"KD","g":"KD","v":8.3051796106357,"o":75,"xt":"KD","ref":6.16910794335633,"tt":["6,2","12 316"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"L","g":"L","v":4.95707821677355,"o":76,"xt":"L","ref":5.33713763380451,"tt":["5,3","7 351"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"MP","g":"MP","v":5.36707734013069,"o":77,"xt":"MP","ref":6.1220738333568,"tt":["6,1","7 959"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"M","g":"M","v":19.2780508857465,"o":78,"xt":"M","ref":19.8516748384061,"tt":["19,9","28 588"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"SD","g":"SD","v":22.6699844227307,"o":79,"xt":"SD","ref":17.4844538450274,"tt":["17,5","33 618"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"V","g":"V","v":4.70959519329975,"o":80,"xt":"V","ref":8.40468366938168,"tt":["8,4","6 984"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"Övriga","g":"Övriga","v":1.61032550423823,"o":81,"xt":"Övriga","ref":1.58404321641202,"tt":["1,6","2 388"]}],"filter":{"enabled":false,"label":null,"values":["__alla"],"default":"__alla","same_y":true},"labels":{"show":true,"keys":[{"k":"__alla","f":"A1 Storstäder","x":"C","g":"C"},{"k":"__alla","f":"A1 Storstäder","x":"KD","g":"KD"},{"k":"__alla","f":"A1 Storstäder","x":"L","g":"L"},{"k":"__alla","f":"A1 Storstäder","x":"M","g":"M"},{"k":"__alla","f":"A1 Storstäder","x":"MP","g":"MP"},{"k":"__alla","f":"A1 Storstäder","x":"S","g":"S"},{"k":"__alla","f":"A1 Storstäder","x":"SD","g":"SD"},{"k":"__alla","f":"A1 Storstäder","x":"V","g":"V"},{"k":"__alla","f":"A1 Storstäder","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"C","g":"C"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"KD","g":"KD"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"L","g":"L"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"M","g":"M"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"MP","g":"MP"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"S","g":"S"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"SD","g":"SD"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"V","g":"V"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"B3 Större stad","x":"C","g":"C"},{"k":"__alla","f":"B3 Större stad","x":"KD","g":"KD"},{"k":"__alla","f":"B3 Större stad","x":"L","g":"L"},{"k":"__alla","f":"B3 Större stad","x":"M","g":"M"},{"k":"__alla","f":"B3 Större stad","x":"MP","g":"MP"},{"k":"__alla","f":"B3 Större stad","x":"S","g":"S"},{"k":"__alla","f":"B3 Större stad","x":"SD","g":"SD"},{"k":"__alla","f":"B3 Större stad","x":"V","g":"V"},{"k":"__alla","f":"B3 Större stad","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"C","g":"C"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"KD","g":"KD"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"L","g":"L"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"M","g":"M"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"MP","g":"MP"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"S","g":"S"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"SD","g":"SD"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"V","g":"V"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"C","g":"C"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"KD","g":"KD"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"L","g":"L"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"M","g":"M"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"MP","g":"MP"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"S","g":"S"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"SD","g":"SD"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"V","g":"V"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"C","g":"C"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"KD","g":"KD"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"L","g":"L"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"M","g":"M"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"MP","g":"MP"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"S","g":"S"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"SD","g":"SD"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"V","g":"V"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"C","g":"C"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"KD","g":"KD"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"L","g":"L"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"M","g":"M"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"MP","g":"MP"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"S","g":"S"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"SD","g":"SD"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"V","g":"V"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"C","g":"C"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"KD","g":"KD"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"L","g":"L"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"M","g":"M"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"MP","g":"MP"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"S","g":"S"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"SD","g":"SD"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"V","g":"V"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"C","g":"C"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"KD","g":"KD"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"L","g":"L"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"M","g":"M"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"MP","g":"MP"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"S","g":"S"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"SD","g":"SD"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"V","g":"V"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"Övriga","g":"Övriga"}],"total_keys":[{"k":"__alla","f":"A1 Storstäder","x":"V"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"V"},{"k":"__alla","f":"B3 Större stad","x":"V"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"V"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"V"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"V"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"V"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"V"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"V"},{"k":"__alla","f":"A1 Storstäder","x":"MP"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"MP"},{"k":"__alla","f":"B3 Större stad","x":"MP"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"MP"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"MP"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"MP"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"MP"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"MP"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"MP"},{"k":"__alla","f":"A1 Storstäder","x":"S"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"S"},{"k":"__alla","f":"B3 Större stad","x":"S"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"S"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"S"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"S"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"S"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"S"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"S"},{"k":"__alla","f":"A1 Storstäder","x":"C"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"C"},{"k":"__alla","f":"B3 Större stad","x":"C"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"C"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"C"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"C"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"C"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"C"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"C"},{"k":"__alla","f":"A1 Storstäder","x":"L"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"L"},{"k":"__alla","f":"B3 Större stad","x":"L"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"L"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"L"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"L"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"L"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"L"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"L"},{"k":"__alla","f":"A1 Storstäder","x":"M"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"M"},{"k":"__alla","f":"B3 Större stad","x":"M"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"M"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"M"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"M"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"M"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"M"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"M"},{"k":"__alla","f":"A1 Storstäder","x":"KD"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"KD"},{"k":"__alla","f":"B3 Större stad","x":"KD"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"KD"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"KD"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"KD"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"KD"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"KD"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"KD"},{"k":"__alla","f":"A1 Storstäder","x":"SD"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"SD"},{"k":"__alla","f":"B3 Större stad","x":"SD"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"SD"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"SD"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"SD"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"SD"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"SD"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"SD"},{"k":"__alla","f":"A1 Storstäder","x":"Övriga"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"Övriga"},{"k":"__alla","f":"B3 Större stad","x":"Övriga"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"Övriga"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"Övriga"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"Övriga"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"Övriga"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"Övriga"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"Övriga"}],"position":"outside","size":10.5826771653543,"color":"#000000","box":false,"box_color":"#FFFFFF","format":"number","decimals":0,"width":null,"nudge_x":0,"nudge_y":0,"repel":false,"force":1,"max_overlaps":10,"show_group":false,"separator":": "},"highlight":{"x":[],"x_enc":[],"color":null,"other_alpha":0.35},"reference":{"enabled":true,"label":"Riket","color":"#263238"},"ref":{"y":[],"y_label":[]},"color_negative":null,"text_scale":1,"grid":{"major":"y","minor":false},"axis_line":{"x":false,"y":false},"bar_line":{"color":"#000000","width":0.853582677165354},"tooltip":{"show":true,"decimals":1,"unit":" %","set_decimals":1,"columns":["Andel i riket (%)","Antal röster"]},"interactive":{"type_toggle":false,"sort":false,"sort_start":"original","legend":true,"export":true},"animation":{"grow":true,"duration":700,"play_interval":1500}}</script>
+<script>vgrD3.whenReady(function(){vgrD3.render('vgrd3-1795344986916-1');});</script>
+</div>
+</div>
+<p>Några saker att lägga märke till:</p>
+<ul>
+<li><p><em>Storstäderna är de rödgrönas och liberalernas fäste.</em> I Stockholm, Göteborg och Malmö får Vänsterpartiet 14,4 procent av rösterna mot 8,4 procent i riket, och Miljöpartiet 10,2 procent mot 6,1. Även Centerpartiet (8,1 mot 7,0) och Liberalerna (6,3 mot 5,3) är starkare i storstäderna än i landet som helhet.</p></li>
+<li><p><em>Sverigedemokraterna är svagast där de flesta bor tätt.</em> I storstäderna får SD bara 10,2 procent, mot 17,5 procent i riket. I pendlingskommunerna nära större stad (B4) och nära mindre tätort (C7) får partiet däremot omkring 24–25 procent och är nästan lika stort som Socialdemokraterna.</p></li>
+<li><p><em>Moderaterna är storstädernas förortsparti.</em> I pendlingskommunerna kring storstäderna (A2), som Täby, Lidingö och Kungsbacka, får M 24,2 procent och är lika stort som S. I övriga kommungrupper får M mellan 17 och 20 procent, alltså strax under sitt rikssnitt på 19,9 procent.</p></li>
+<li><p><em>Socialdemokraterna är starkast i de mindre städerna och på landsbygden.</em> S får omkring 31 procent i de mindre städerna (C6) och i landsbygdskommunerna (C8), men bara 24,8 procent i storstädernas pendlingskommuner och 27,0 procent i storstäderna, alltså under rikssnittet på 28,0 procent.</p></li>
+<li><p><em>Kristdemokraterna är det parti som är minst storstadspräglat.</em> I storstäderna får KD 4,1 procent, men omkring 8 procent i pendlingskommunerna nära mindre tätort och på landsbygden (C7–C9), mot 6,2 procent i riket.</p></li>
+</ul>
+</section>
+<section id="förändringen-sedan-2022" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="förändringen-sedan-2022">Förändringen sedan 2022</h2>
+<p>Nästa diagram visar hur partiernas andel har förändrats sedan valet 2022, i procentenheter. Strecket är förändringen i riket.</p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-page">
+<div id="vgrd3-1795344987050-2" class="vgr-d3-container"></div>
+<script type="application/json" id="vgrd3-1795344987050-2-spec">{"typ":"stapeldiagram","js_fil":"stapeldiagram","empty":false,"width":1100,"height":900,"font":"'Verdana', sans-serif","horizontal":false,"bar_type":"grouped","bar_width":0.8,"text":{"title":[],"subtitle":["Förändring i partiernas andel av de giltiga rösterna per kommungrupp 2022–2026 (procentenheter). Strecket =","förändring i riket."],"caption":["Källa: Valmyndigheten (slutligt valresultat riksdagen 2026) och SKR (kommungruppsindelning 2023). Bearbetning: Christian Lindell."],"title_size":21.3333333333333,"subtitle_size":17.3333333333333,"caption_size":13.3333333333333,"x_axis_title":null,"y_axis_title":"Procentenheter","x_axis_title_size":14.6666666666667,"y_axis_title_size":14.6666666666667,"x_axis_title_angle":0,"x_axis_text_size":14.6666666666667,"y_axis_text_size":14.6666666666667,"facet_title_size":16},"x":{"type":"discrete","levels":["V","MP","S","C","L","M","KD","SD","Övriga"],"domain":null,"ticks":[],"tick_labels":[],"minor":null,"angle":45,"number_format":"whole"},"y":{"min":null,"max":null,"breaks":null,"n_breaks":4,"auto":true,"expand":[0.25,0.25]},"facets":{"levels":["A1 Storstäder","A2 Pendlingskommun nära storstad","B3 Större stad","B4 Pendlingskommun nära större stad","B5 Lågpendlingskommun nära större stad","C6 Mindre stad/tätort","C7 Pendlingskommun nära mindre tätort","C8 Landsbygdskommun","C9 Landsbygdskommun med besöksnäring"],"ncol":3,"scales":"fixed","wrapped":false},"groups":[{"key":"V","label":"V","color":"#8B0000"},{"key":"MP","label":"MP","color":"#83CF39"},{"key":"S","label":"S","color":"#E8112D"},{"key":"C","label":"C","color":"#009933"},{"key":"L","label":"L","color":"#006AB3"},{"key":"M","label":"M","color":"#52BDEC"},{"key":"KD","label":"KD","color":"#000077"},{"key":"SD","label":"SD","color":"#DDDD00"},{"key":"Övriga","label":"Övriga","color":"#9B9B9B"}],"has_groups":true,"legend":{"position":"none","title":"parti","text_size":14.6666666666667,"title_size":14.6666666666667},"rows":[{"k":"__alla","f":"A1 Storstäder","x":"S","g":"S","v":-1.15750193311761,"o":1,"xt":"S","ref":-2.30907135150968,"tt":["28,2","27,0"]},{"k":"__alla","f":"A1 Storstäder","x":"C","g":"C","v":0.928544140840255,"o":2,"xt":"C","ref":0.31622190584414,"tt":["7,2","8,1"]},{"k":"__alla","f":"A1 Storstäder","x":"KD","g":"KD","v":0.576712410528262,"o":3,"xt":"KD","ref":0.832374367868949,"tt":["3,5","4,1"]},{"k":"__alla","f":"A1 Storstäder","x":"L","g":"L","v":0.152897717841652,"o":4,"xt":"L","ref":0.728564269000409,"tt":["6,2","6,3"]},{"k":"__alla","f":"A1 Storstäder","x":"MP","g":"MP","v":1.22414138745651,"o":5,"xt":"MP","ref":1.03958657268718,"tt":["9,0","10,2"]},{"k":"__alla","f":"A1 Storstäder","x":"M","g":"M","v":-0.322001918115888,"o":6,"xt":"M","ref":0.749579583256761,"tt":["18,7","18,4"]},{"k":"__alla","f":"A1 Storstäder","x":"SD","g":"SD","v":-2.5900284214874,"o":7,"xt":"SD","ref":-3.05168633468939,"tt":["12,8","10,2"]},{"k":"__alla","f":"A1 Storstäder","x":"V","g":"V","v":2.18165432357372,"o":8,"xt":"V","ref":1.65797135055341,"tt":["12,2","14,4"]},{"k":"__alla","f":"A1 Storstäder","x":"Övriga","g":"Övriga","v":-0.994417707519504,"o":9,"xt":"Övriga","ref":0.036459636988222,"tt":["2,3","1,3"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"S","g":"S","v":-1.73987742017589,"o":10,"xt":"S","ref":-2.30907135150968,"tt":["26,5","24,8"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"C","g":"C","v":0.667490654706765,"o":11,"xt":"C","ref":0.31622190584414,"tt":["7,1","7,8"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"KD","g":"KD","v":0.857689907365277,"o":12,"xt":"KD","ref":0.832374367868949,"tt":["5,1","6,0"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"L","g":"L","v":0.838523496449797,"o":13,"xt":"L","ref":0.728564269000409,"tt":["5,9","6,8"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"MP","g":"MP","v":0.742661861277522,"o":14,"xt":"MP","ref":1.03958657268718,"tt":["4,9","5,6"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"M","g":"M","v":0.257997924673763,"o":15,"xt":"M","ref":0.749579583256761,"tt":["23,9","24,2"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"SD","g":"SD","v":-2.98563208544348,"o":16,"xt":"SD","ref":-3.05168633468939,"tt":["19,4","16,4"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"V","g":"V","v":1.49260719052063,"o":17,"xt":"V","ref":1.65797135055341,"tt":["5,6","7,1"]},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"Övriga","g":"Övriga","v":-0.131461529374387,"o":18,"xt":"Övriga","ref":0.036459636988222,"tt":["1,5","1,4"]},{"k":"__alla","f":"B3 Större stad","x":"S","g":"S","v":-2.13956358699243,"o":19,"xt":"S","ref":-2.30907135150968,"tt":["31,9","29,8"]},{"k":"__alla","f":"B3 Större stad","x":"C","g":"C","v":0.126732234564071,"o":20,"xt":"C","ref":0.31622190584414,"tt":["6,5","6,6"]},{"k":"__alla","f":"B3 Större stad","x":"KD","g":"KD","v":0.709722243165414,"o":21,"xt":"KD","ref":0.832374367868949,"tt":["5,4","6,1"]},{"k":"__alla","f":"B3 Större stad","x":"L","g":"L","v":0.220049671713884,"o":22,"xt":"L","ref":0.728564269000409,"tt":["4,7","4,9"]},{"k":"__alla","f":"B3 Större stad","x":"MP","g":"MP","v":1.14061809825567,"o":23,"xt":"MP","ref":1.03958657268718,"tt":["5,2","6,4"]},{"k":"__alla","f":"B3 Större stad","x":"M","g":"M","v":0.454752242389365,"o":24,"xt":"M","ref":0.749579583256761,"tt":["19,1","19,5"]},{"k":"__alla","f":"B3 Större stad","x":"SD","g":"SD","v":-2.7682707455025,"o":25,"xt":"SD","ref":-3.05168633468939,"tt":["19,0","16,2"]},{"k":"__alla","f":"B3 Större stad","x":"V","g":"V","v":2.04719025595359,"o":26,"xt":"V","ref":1.65797135055341,"tt":["6,8","8,8"]},{"k":"__alla","f":"B3 Större stad","x":"Övriga","g":"Övriga","v":0.208769586452934,"o":27,"xt":"Övriga","ref":0.036459636988222,"tt":["1,5","1,7"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"S","g":"S","v":-2.82226066620818,"o":28,"xt":"S","ref":-2.30907135150968,"tt":["29,3","26,5"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"C","g":"C","v":0.0483166914474387,"o":29,"xt":"C","ref":0.31622190584414,"tt":["6,2","6,2"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"KD","g":"KD","v":0.970391012541852,"o":30,"xt":"KD","ref":0.832374367868949,"tt":["6,2","7,2"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"L","g":"L","v":1.30103130315053,"o":31,"xt":"L","ref":0.728564269000409,"tt":["3,5","4,8"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"MP","g":"MP","v":0.844067065298775,"o":32,"xt":"MP","ref":1.03958657268718,"tt":["3,2","4,1"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"M","g":"M","v":1.57027375150109,"o":33,"xt":"M","ref":0.749579583256761,"tt":["18,0","19,5"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"SD","g":"SD","v":-3.5992271621546,"o":34,"xt":"SD","ref":-3.05168633468939,"tt":["28,0","24,4"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"V","g":"V","v":1.21174991764892,"o":35,"xt":"V","ref":1.65797135055341,"tt":["4,2","5,4"]},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"Övriga","g":"Övriga","v":0.475658086774161,"o":36,"xt":"Övriga","ref":0.036459636988222,"tt":["1,4","1,8"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"S","g":"S","v":-2.72341420313948,"o":37,"xt":"S","ref":-2.30907135150968,"tt":["32,3","29,6"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"C","g":"C","v":-0.0934237594792506,"o":38,"xt":"C","ref":0.31622190584414,"tt":["5,8","5,7"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"KD","g":"KD","v":0.869958498845941,"o":39,"xt":"KD","ref":0.832374367868949,"tt":["6,2","7,1"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"L","g":"L","v":1.20769894605109,"o":40,"xt":"L","ref":0.728564269000409,"tt":["3,1","4,4"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"MP","g":"MP","v":0.704236495237631,"o":41,"xt":"MP","ref":1.03958657268718,"tt":["2,9","3,6"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"M","g":"M","v":1.4874339894496,"o":42,"xt":"M","ref":0.749579583256761,"tt":["16,5","18,0"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"SD","g":"SD","v":-3.58242127153483,"o":43,"xt":"SD","ref":-3.05168633468939,"tt":["27,0","23,4"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"V","g":"V","v":1.43734132759173,"o":44,"xt":"V","ref":1.65797135055341,"tt":["4,9","6,3"]},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"Övriga","g":"Övriga","v":0.692589976977561,"o":45,"xt":"Övriga","ref":0.036459636988222,"tt":["1,3","2,0"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"S","g":"S","v":-3.30796972224756,"o":46,"xt":"S","ref":-2.30907135150968,"tt":["34,6","31,3"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"C","g":"C","v":-0.117355636718155,"o":47,"xt":"C","ref":0.31622190584414,"tt":["6,9","6,8"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"KD","g":"KD","v":1.23344317105545,"o":48,"xt":"KD","ref":0.832374367868949,"tt":["5,6","6,9"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"L","g":"L","v":1.01754806718439,"o":49,"xt":"L","ref":0.728564269000409,"tt":["3,4","4,4"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"MP","g":"MP","v":0.976251064430924,"o":50,"xt":"MP","ref":1.03958657268718,"tt":["3,8","4,8"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"M","g":"M","v":1.30920860846235,"o":51,"xt":"M","ref":0.749579583256761,"tt":["17,7","19,0"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"SD","g":"SD","v":-2.40267551427909,"o":52,"xt":"SD","ref":-3.05168633468939,"tt":["21,6","19,2"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"V","g":"V","v":0.938461468423186,"o":53,"xt":"V","ref":1.65797135055341,"tt":["5,1","6,1"]},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"Övriga","g":"Övriga","v":0.353088493688498,"o":54,"xt":"Övriga","ref":0.036459636988222,"tt":["1,2","1,6"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"S","g":"S","v":-3.18515510744076,"o":55,"xt":"S","ref":-2.30907135150968,"tt":["30,5","27,3"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"C","g":"C","v":-0.00821139218841704,"o":56,"xt":"C","ref":0.31622190584414,"tt":["6,0","6,0"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"KD","g":"KD","v":1.11303137376975,"o":57,"xt":"KD","ref":0.832374367868949,"tt":["7,0","8,1"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"L","g":"L","v":1.37263942647029,"o":58,"xt":"L","ref":0.728564269000409,"tt":["3,0","4,4"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"MP","g":"MP","v":0.866670857138661,"o":59,"xt":"MP","ref":1.03958657268718,"tt":["3,0","3,9"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"M","g":"M","v":1.66581911004494,"o":60,"xt":"M","ref":0.749579583256761,"tt":["16,4","18,0"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"SD","g":"SD","v":-3.66822414469866,"o":61,"xt":"SD","ref":-3.05168633468939,"tt":["28,3","24,6"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"V","g":"V","v":1.25849431203314,"o":62,"xt":"V","ref":1.65797135055341,"tt":["4,5","5,8"]},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"Övriga","g":"Övriga","v":0.584935564871047,"o":63,"xt":"Övriga","ref":0.036459636988222,"tt":["1,3","1,9"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"S","g":"S","v":-3.91774306389414,"o":64,"xt":"S","ref":-2.30907135150968,"tt":["34,9","31,0"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"C","g":"C","v":-0.363338449878205,"o":65,"xt":"C","ref":0.31622190584414,"tt":["6,9","6,5"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"KD","g":"KD","v":1.2802648614573,"o":66,"xt":"KD","ref":0.832374367868949,"tt":["6,6","7,9"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"L","g":"L","v":1.19246721820483,"o":67,"xt":"L","ref":0.728564269000409,"tt":["2,5","3,7"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"MP","g":"MP","v":0.788186702663511,"o":68,"xt":"MP","ref":1.03958657268718,"tt":["2,6","3,4"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"M","g":"M","v":2.13962637328656,"o":69,"xt":"M","ref":0.749579583256761,"tt":["14,5","16,7"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"SD","g":"SD","v":-2.56646562784251,"o":70,"xt":"SD","ref":-3.05168633468939,"tt":["25,6","23,0"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"V","g":"V","v":0.815098675742476,"o":71,"xt":"V","ref":1.65797135055341,"tt":["5,1","5,9"]},{"k":"__alla","f":"C8 Landsbygdskommun","x":"Övriga","g":"Övriga","v":0.631903310260188,"o":72,"xt":"Övriga","ref":0.036459636988222,"tt":["1,2","1,8"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"S","g":"S","v":-3.16174401077349,"o":73,"xt":"S","ref":-2.30907135150968,"tt":["29,1","25,9"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"C","g":"C","v":0.374199057520807,"o":74,"xt":"C","ref":0.31622190584414,"tt":["6,8","7,2"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"KD","g":"KD","v":1.22499602532253,"o":75,"xt":"KD","ref":0.832374367868949,"tt":["7,1","8,3"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"L","g":"L","v":1.44195942627679,"o":76,"xt":"L","ref":0.728564269000409,"tt":["3,5","5,0"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"MP","g":"MP","v":1.22965833365121,"o":77,"xt":"MP","ref":1.03958657268718,"tt":["4,1","5,4"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"M","g":"M","v":2.33285650129721,"o":78,"xt":"M","ref":0.749579583256761,"tt":["16,9","19,3"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"SD","g":"SD","v":-3.70353069605982,"o":79,"xt":"SD","ref":-3.05168633468939,"tt":["26,4","22,7"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"V","g":"V","v":-0.0319004870458208,"o":80,"xt":"V","ref":1.65797135055341,"tt":["4,7","4,7"]},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"Övriga","g":"Övriga","v":0.293505849810585,"o":81,"xt":"Övriga","ref":0.036459636988222,"tt":["1,3","1,6"]}],"filter":{"enabled":false,"label":null,"values":["__alla"],"default":"__alla","same_y":true},"labels":{"show":true,"keys":[{"k":"__alla","f":"A1 Storstäder","x":"C","g":"C"},{"k":"__alla","f":"A1 Storstäder","x":"KD","g":"KD"},{"k":"__alla","f":"A1 Storstäder","x":"L","g":"L"},{"k":"__alla","f":"A1 Storstäder","x":"M","g":"M"},{"k":"__alla","f":"A1 Storstäder","x":"MP","g":"MP"},{"k":"__alla","f":"A1 Storstäder","x":"S","g":"S"},{"k":"__alla","f":"A1 Storstäder","x":"SD","g":"SD"},{"k":"__alla","f":"A1 Storstäder","x":"V","g":"V"},{"k":"__alla","f":"A1 Storstäder","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"C","g":"C"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"KD","g":"KD"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"L","g":"L"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"M","g":"M"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"MP","g":"MP"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"S","g":"S"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"SD","g":"SD"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"V","g":"V"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"B3 Större stad","x":"C","g":"C"},{"k":"__alla","f":"B3 Större stad","x":"KD","g":"KD"},{"k":"__alla","f":"B3 Större stad","x":"L","g":"L"},{"k":"__alla","f":"B3 Större stad","x":"M","g":"M"},{"k":"__alla","f":"B3 Större stad","x":"MP","g":"MP"},{"k":"__alla","f":"B3 Större stad","x":"S","g":"S"},{"k":"__alla","f":"B3 Större stad","x":"SD","g":"SD"},{"k":"__alla","f":"B3 Större stad","x":"V","g":"V"},{"k":"__alla","f":"B3 Större stad","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"C","g":"C"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"KD","g":"KD"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"L","g":"L"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"M","g":"M"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"MP","g":"MP"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"S","g":"S"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"SD","g":"SD"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"V","g":"V"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"C","g":"C"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"KD","g":"KD"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"L","g":"L"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"M","g":"M"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"MP","g":"MP"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"S","g":"S"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"SD","g":"SD"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"V","g":"V"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"C","g":"C"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"KD","g":"KD"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"L","g":"L"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"M","g":"M"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"MP","g":"MP"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"S","g":"S"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"SD","g":"SD"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"V","g":"V"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"C","g":"C"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"KD","g":"KD"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"L","g":"L"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"M","g":"M"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"MP","g":"MP"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"S","g":"S"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"SD","g":"SD"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"V","g":"V"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"C","g":"C"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"KD","g":"KD"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"L","g":"L"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"M","g":"M"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"MP","g":"MP"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"S","g":"S"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"SD","g":"SD"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"V","g":"V"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"Övriga","g":"Övriga"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"C","g":"C"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"KD","g":"KD"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"L","g":"L"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"M","g":"M"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"MP","g":"MP"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"S","g":"S"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"SD","g":"SD"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"V","g":"V"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"Övriga","g":"Övriga"}],"total_keys":[{"k":"__alla","f":"A1 Storstäder","x":"V"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"V"},{"k":"__alla","f":"B3 Större stad","x":"V"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"V"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"V"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"V"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"V"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"V"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"V"},{"k":"__alla","f":"A1 Storstäder","x":"MP"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"MP"},{"k":"__alla","f":"B3 Större stad","x":"MP"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"MP"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"MP"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"MP"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"MP"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"MP"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"MP"},{"k":"__alla","f":"A1 Storstäder","x":"S"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"S"},{"k":"__alla","f":"B3 Större stad","x":"S"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"S"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"S"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"S"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"S"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"S"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"S"},{"k":"__alla","f":"A1 Storstäder","x":"C"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"C"},{"k":"__alla","f":"B3 Större stad","x":"C"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"C"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"C"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"C"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"C"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"C"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"C"},{"k":"__alla","f":"A1 Storstäder","x":"L"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"L"},{"k":"__alla","f":"B3 Större stad","x":"L"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"L"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"L"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"L"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"L"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"L"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"L"},{"k":"__alla","f":"A1 Storstäder","x":"M"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"M"},{"k":"__alla","f":"B3 Större stad","x":"M"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"M"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"M"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"M"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"M"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"M"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"M"},{"k":"__alla","f":"A1 Storstäder","x":"KD"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"KD"},{"k":"__alla","f":"B3 Större stad","x":"KD"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"KD"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"KD"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"KD"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"KD"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"KD"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"KD"},{"k":"__alla","f":"A1 Storstäder","x":"SD"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"SD"},{"k":"__alla","f":"B3 Större stad","x":"SD"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"SD"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"SD"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"SD"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"SD"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"SD"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"SD"},{"k":"__alla","f":"A1 Storstäder","x":"Övriga"},{"k":"__alla","f":"A2 Pendlingskommun nära storstad","x":"Övriga"},{"k":"__alla","f":"B3 Större stad","x":"Övriga"},{"k":"__alla","f":"B4 Pendlingskommun nära större stad","x":"Övriga"},{"k":"__alla","f":"B5 Lågpendlingskommun nära större stad","x":"Övriga"},{"k":"__alla","f":"C6 Mindre stad/tätort","x":"Övriga"},{"k":"__alla","f":"C7 Pendlingskommun nära mindre tätort","x":"Övriga"},{"k":"__alla","f":"C8 Landsbygdskommun","x":"Övriga"},{"k":"__alla","f":"C9 Landsbygdskommun med besöksnäring","x":"Övriga"}],"position":"outside","size":10.5826771653543,"color":"#000000","box":false,"box_color":"#FFFFFF","format":"number","decimals":1,"width":null,"nudge_x":0,"nudge_y":0,"repel":false,"force":1,"max_overlaps":10,"show_group":false,"separator":": "},"highlight":{"x":[],"x_enc":[],"color":null,"other_alpha":0.35},"reference":{"enabled":true,"label":"Riket","color":"#263238"},"ref":{"y":[0],"y_label":[]},"color_negative":null,"text_scale":1,"grid":{"major":"y","minor":false},"axis_line":{"x":false,"y":false},"bar_line":{"color":"#000000","width":0.853582677165354},"tooltip":{"show":true,"decimals":1,"unit":" procentenheter","set_decimals":1,"columns":["Andel 2022 (%)","Andel 2026 (%)"]},"interactive":{"type_toggle":false,"sort":false,"sort_start":"original","legend":true,"export":true},"animation":{"grow":true,"duration":700,"play_interval":1500}}</script>
+<script>vgrD3.whenReady(function(){vgrD3.render('vgrd3-1795344987050-2');});</script>
+</div>
+</div>
+<ul>
+<li><p><em>S och SD backar i alla kommungrupper.</em> Socialdemokraterna tappar 2,3 procentenheter i riket. Tappet är minst i storstäderna (−1,2) och störst i landsbygdskommunerna (−3,9). Sverigedemokraterna tappar 3,1 procentenheter i riket, mest i kommunerna kring de större och mindre städerna och i landsbygdskommunerna med besöksnäring (B4, B5, C7 och C9, −3,6 till −3,7) och minst i de mindre städerna (−2,4).</p></li>
+<li><p><em>Moderaterna växer utanför de stora städerna.</em> M backar något i storstäderna (−0,3) och ökar bara lite i storstädernas pendlingskommuner och de större städerna (+0,3 och +0,5). I alla övriga kommungrupper ökar M med mellan 1,3 och 2,3 procentenheter, mest i landsbygdskommunerna (C8 och C9).</p></li>
+<li><p><em>Vänsterpartiets framgång är en stadsframgång.</em> V ökar med 1,7 procentenheter i riket, men med 2,2 i storstäderna och 2,0 i de större städerna. I landsbygdskommunerna med besöksnäring står partiet still.</p></li>
+<li><p><em>Centerpartiet ökar bara kring storstäderna.</em> C ökar med 0,7–0,9 procentenheter i storstäderna och deras pendlingskommuner, men står still eller backar något i de flesta andra kommungrupper.</p></li>
+</ul>
+</section>
+<section id="varifrån-kommer-partiernas-röster" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="varifrån-kommer-partiernas-röster">Varifrån kommer partiernas röster?</h2>
+<p>Diagrammen ovan visar hur starka partierna är i varje kommungrupp. Men kommungrupperna är olika stora, så de säger inte var partierna hämtar sina röster. Det visar nästa diagram. Varje stapel är ett partis röster i hela landet, uppdelade på kommungrupperna, och summerar till 100 procent. Den nedersta stapeln visar hur alla som röstade, inklusive blanka och ogiltiga röster, fördelar sig. Ett parti som har en större andel än alla röstande i en kommungrupp är överrepresenterat där.</p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-page">
+<div id="vgrd3-1795344987123-3" class="vgr-d3-container"></div>
+<script type="application/json" id="vgrd3-1795344987123-3-spec">{"typ":"stapeldiagram","js_fil":"stapeldiagram","empty":false,"width":1100,"height":650,"font":"'Verdana', sans-serif","horizontal":true,"bar_type":"filled","bar_width":0.8,"text":{"title":[],"subtitle":["Andel av partiets röster i riksdagsvalet 2026 som kommer från respektive kommungrupp (%)"],"caption":["Källa: Valmyndigheten (slutligt valresultat riksdagen 2026) och SKR (kommungruppsindelning 2023). Bearbetning: Christian Lindell."],"title_size":21.3333333333333,"subtitle_size":17.3333333333333,"caption_size":13.3333333333333,"x_axis_title":null,"y_axis_title":"Andel av partiets röster (%)","x_axis_title_size":14.6666666666667,"y_axis_title_size":14.6666666666667,"x_axis_title_angle":0,"x_axis_text_size":14.6666666666667,"y_axis_text_size":14.6666666666667,"facet_title_size":16},"x":{"type":"discrete","levels":["Alla röstande","Övriga","SD","KD","M","L","C","S","MP","V"],"domain":null,"ticks":[],"tick_labels":[],"minor":null,"angle":0,"number_format":"whole"},"y":{"min":null,"max":null,"breaks":null,"n_breaks":6,"auto":true,"expand":[0.05,0.2]},"facets":{"levels":["__alla"],"ncol":1,"scales":"fixed","wrapped":false},"groups":[{"key":"A1 Storstäder","label":"A1 Storstäder","color":"#1F3A73"},{"key":"A2 Pendlingskommun nära storstad","label":"A2 Pendlingskommun nära storstad","color":"#6C93C9"},{"key":"B3 Större stad","label":"B3 Större stad","color":"#1B6B4A"},{"key":"B4 Pendlingskommun nära större stad","label":"B4 Pendlingskommun nära större stad","color":"#4FA57A"},{"key":"B5 Lågpendlingskommun nära större stad","label":"B5 Lågpendlingskommun nära större stad","color":"#A6D6B5"},{"key":"C6 Mindre stad/tätort","label":"C6 Mindre stad/tätort","color":"#8C3B12"},{"key":"C7 Pendlingskommun nära mindre tätort","label":"C7 Pendlingskommun nära mindre tätort","color":"#C8692B"},{"key":"C8 Landsbygdskommun","label":"C8 Landsbygdskommun","color":"#E9A066"},{"key":"C9 Landsbygdskommun med besöksnäring","label":"C9 Landsbygdskommun med besöksnäring","color":"#F6D3A8"}],"has_groups":true,"legend":{"position":"bottom","title":"","text_size":14.6666666666667,"title_size":14.6666666666667},"rows":[{"k":"__alla","f":"__alla","x":"S","g":"A1 Storstäder","v":17.7667697439173,"o":1,"xt":"S","ref":null,"tt":["336 856"]},{"k":"__alla","f":"__alla","x":"C","g":"A1 Storstäder","v":21.2453234688301,"o":2,"xt":"C","ref":null,"tt":["101 081"]},{"k":"__alla","f":"__alla","x":"KD","g":"A1 Storstäder","v":12.1775371865194,"o":3,"xt":"KD","ref":null,"tt":["50 840"]},{"k":"__alla","f":"__alla","x":"L","g":"A1 Storstäder","v":21.8061558140243,"o":4,"xt":"L","ref":null,"tt":["78 761"]},{"k":"__alla","f":"__alla","x":"MP","g":"A1 Storstäder","v":30.6234265894614,"o":5,"xt":"MP","ref":null,"tt":["126 875"]},{"k":"__alla","f":"__alla","x":"M","g":"A1 Storstäder","v":17.0351960031203,"o":6,"xt":"M","ref":null,"tt":["228 859"]},{"k":"__alla","f":"__alla","x":"SD","g":"A1 Storstäder","v":10.7853974821846,"o":7,"xt":"SD","ref":null,"tt":["127 618"]},{"k":"__alla","f":"__alla","x":"V","g":"A1 Storstäder","v":31.4954261833641,"o":8,"xt":"V","ref":null,"tt":["179 140"]},{"k":"__alla","f":"__alla","x":"Övriga","g":"A1 Storstäder","v":14.8275636899598,"o":9,"xt":"Övriga","ref":null,"tt":["15 895"]},{"k":"__alla","f":"__alla","x":"S","g":"A2 Pendlingskommun nära storstad","v":16.4574794474019,"o":10,"xt":"S","ref":null,"tt":["312 032"]},{"k":"__alla","f":"__alla","x":"C","g":"A2 Pendlingskommun nära storstad","v":20.6347471520451,"o":11,"xt":"C","ref":null,"tt":["98 176"]},{"k":"__alla","f":"__alla","x":"KD","g":"A2 Pendlingskommun nära storstad","v":18.091930345637,"o":12,"xt":"KD","ref":null,"tt":["75 532"]},{"k":"__alla","f":"__alla","x":"L","g":"A2 Pendlingskommun nära storstad","v":23.6110380495422,"o":13,"xt":"L","ref":null,"tt":["85 280"]},{"k":"__alla","f":"__alla","x":"MP","g":"A2 Pendlingskommun nära storstad","v":17.0701919108294,"o":14,"xt":"MP","ref":null,"tt":["70 723"]},{"k":"__alla","f":"__alla","x":"M","g":"A2 Pendlingskommun nära storstad","v":22.7056797136919,"o":15,"xt":"M","ref":null,"tt":["305 039"]},{"k":"__alla","f":"__alla","x":"SD","g":"A2 Pendlingskommun nära storstad","v":17.4430043405947,"o":16,"xt":"SD","ref":null,"tt":["206 394"]},{"k":"__alla","f":"__alla","x":"V","g":"A2 Pendlingskommun nära storstad","v":15.7965895485257,"o":17,"xt":"V","ref":null,"tt":["89 848"]},{"k":"__alla","f":"__alla","x":"Övriga","g":"A2 Pendlingskommun nära storstad","v":16.3844811985186,"o":18,"xt":"Övriga","ref":null,"tt":["17 564"]},{"k":"__alla","f":"__alla","x":"S","g":"B3 Större stad","v":27.2768460154568,"o":19,"xt":"S","ref":null,"tt":["517 166"]},{"k":"__alla","f":"__alla","x":"C","g":"B3 Större stad","v":24.19248392114,"o":20,"xt":"C","ref":null,"tt":["115 103"]},{"k":"__alla","f":"__alla","x":"KD","g":"B3 Större stad","v":25.2688687154183,"o":21,"xt":"KD","ref":null,"tt":["105 495"]},{"k":"__alla","f":"__alla","x":"L","g":"B3 Större stad","v":23.5318546902297,"o":22,"xt":"L","ref":null,"tt":["84 994"]},{"k":"__alla","f":"__alla","x":"MP","g":"B3 Större stad","v":26.6985592809197,"o":23,"xt":"MP","ref":null,"tt":["110 614"]},{"k":"__alla","f":"__alla","x":"M","g":"B3 Större stad","v":25.2240503540144,"o":24,"xt":"M","ref":null,"tt":["338 872"]},{"k":"__alla","f":"__alla","x":"SD","g":"B3 Större stad","v":23.7875745405866,"o":25,"xt":"SD","ref":null,"tt":["281 466"]},{"k":"__alla","f":"__alla","x":"V","g":"B3 Större stad","v":26.9230160641794,"o":26,"xt":"V","ref":null,"tt":["153 133"]},{"k":"__alla","f":"__alla","x":"Övriga","g":"B3 Större stad","v":26.8743178574427,"o":27,"xt":"Övriga","ref":null,"tt":["28 809"]},{"k":"__alla","f":"__alla","x":"S","g":"B4 Pendlingskommun nära större stad","v":9.38771269242596,"o":28,"xt":"S","ref":null,"tt":["177 990"]},{"k":"__alla","f":"__alla","x":"C","g":"B4 Pendlingskommun nära större stad","v":8.80596073815629,"o":29,"xt":"C","ref":null,"tt":["41 897"]},{"k":"__alla","f":"__alla","x":"KD","g":"B4 Pendlingskommun nära större stad","v":11.601715011138,"o":30,"xt":"KD","ref":null,"tt":["48 436"]},{"k":"__alla","f":"__alla","x":"L","g":"B4 Pendlingskommun nära större stad","v":8.89123916420026,"o":31,"xt":"L","ref":null,"tt":["32 114"]},{"k":"__alla","f":"__alla","x":"MP","g":"B4 Pendlingskommun nära större stad","v":6.60548820077865,"o":32,"xt":"MP","ref":null,"tt":["27 367"]},{"k":"__alla","f":"__alla","x":"M","g":"B4 Pendlingskommun nära större stad","v":9.76561802168748,"o":33,"xt":"M","ref":null,"tt":["131 196"]},{"k":"__alla","f":"__alla","x":"SD","g":"B4 Pendlingskommun nära större stad","v":13.8617601720011,"o":34,"xt":"SD","ref":null,"tt":["164 019"]},{"k":"__alla","f":"__alla","x":"V","g":"B4 Pendlingskommun nära större stad","v":6.43657224836976,"o":35,"xt":"V","ref":null,"tt":["36 610"]},{"k":"__alla","f":"__alla","x":"Övriga","g":"B4 Pendlingskommun nära större stad","v":11.4786518530956,"o":36,"xt":"Övriga","ref":null,"tt":["12 305"]},{"k":"__alla","f":"__alla","x":"S","g":"B5 Lågpendlingskommun nära större stad","v":5.01279279573879,"o":37,"xt":"S","ref":null,"tt":["95 042"]},{"k":"__alla","f":"__alla","x":"C","g":"B5 Lågpendlingskommun nära större stad","v":3.87447980158897,"o":38,"xt":"C","ref":null,"tt":["18 434"]},{"k":"__alla","f":"__alla","x":"KD","g":"B5 Lågpendlingskommun nära större stad","v":5.44013030252222,"o":39,"xt":"KD","ref":null,"tt":["22 712"]},{"k":"__alla","f":"__alla","x":"L","g":"B5 Lågpendlingskommun nära större stad","v":3.87250925420904,"o":40,"xt":"L","ref":null,"tt":["13 987"]},{"k":"__alla","f":"__alla","x":"MP","g":"B5 Lågpendlingskommun nära större stad","v":2.78271909477754,"o":41,"xt":"MP","ref":null,"tt":["11 529"]},{"k":"__alla","f":"__alla","x":"M","g":"B5 Lågpendlingskommun nära större stad","v":4.29819390106651,"o":42,"xt":"M","ref":null,"tt":["57 744"]},{"k":"__alla","f":"__alla","x":"SD","g":"B5 Lågpendlingskommun nära större stad","v":6.34955647505848,"o":43,"xt":"SD","ref":null,"tt":["75 131"]},{"k":"__alla","f":"__alla","x":"V","g":"B5 Lågpendlingskommun nära större stad","v":3.58485955051241,"o":44,"xt":"V","ref":null,"tt":["20 390"]},{"k":"__alla","f":"__alla","x":"Övriga","g":"B5 Lågpendlingskommun nära större stad","v":6.01964570565024,"o":45,"xt":"Övriga","ref":null,"tt":["6 453"]},{"k":"__alla","f":"__alla","x":"S","g":"C6 Mindre stad/tätort","v":12.5357794797333,"o":46,"xt":"S","ref":null,"tt":["237 677"]},{"k":"__alla","f":"__alla","x":"C","g":"C6 Mindre stad/tätort","v":10.8047837235697,"o":47,"xt":"C","ref":null,"tt":["51 407"]},{"k":"__alla","f":"__alla","x":"KD","g":"C6 Mindre stad/tätort","v":12.4795803492299,"o":48,"xt":"KD","ref":null,"tt":["52 101"]},{"k":"__alla","f":"__alla","x":"L","g":"C6 Mindre stad/tätort","v":9.19302189724436,"o":49,"xt":"L","ref":null,"tt":["33 204"]},{"k":"__alla","f":"__alla","x":"MP","g":"C6 Mindre stad/tätort","v":8.7782731163123,"o":50,"xt":"MP","ref":null,"tt":["36 369"]},{"k":"__alla","f":"__alla","x":"M","g":"C6 Mindre stad/tätort","v":10.7230797172648,"o":51,"xt":"M","ref":null,"tt":["144 059"]},{"k":"__alla","f":"__alla","x":"SD","g":"C6 Mindre stad/tätort","v":12.2933653807148,"o":52,"xt":"SD","ref":null,"tt":["145 461"]},{"k":"__alla","f":"__alla","x":"V","g":"C6 Mindre stad/tätort","v":8.08711964710495,"o":53,"xt":"V","ref":null,"tt":["45 998"]},{"k":"__alla","f":"__alla","x":"Övriga","g":"C6 Mindre stad/tätort","v":11.296747171149,"o":54,"xt":"Övriga","ref":null,"tt":["12 110"]},{"k":"__alla","f":"__alla","x":"S","g":"C7 Pendlingskommun nära mindre tätort","v":5.12450230460198,"o":55,"xt":"S","ref":null,"tt":["97 160"]},{"k":"__alla","f":"__alla","x":"C","g":"C7 Pendlingskommun nära mindre tätort","v":4.49724662659212,"o":56,"xt":"C","ref":null,"tt":["21 397"]},{"k":"__alla","f":"__alla","x":"KD","g":"C7 Pendlingskommun nära mindre tätort","v":6.86962561977532,"o":57,"xt":"KD","ref":null,"tt":["28 680"]},{"k":"__alla","f":"__alla","x":"L","g":"C7 Pendlingskommun nära mindre tätort","v":4.28448421454814,"o":58,"xt":"L","ref":null,"tt":["15 475"]},{"k":"__alla","f":"__alla","x":"MP","g":"C7 Pendlingskommun nära mindre tätort","v":3.30503708602558,"o":59,"xt":"MP","ref":null,"tt":["13 693"]},{"k":"__alla","f":"__alla","x":"M","g":"C7 Pendlingskommun nära mindre tätort","v":4.77532438918365,"o":60,"xt":"M","ref":null,"tt":["64 154"]},{"k":"__alla","f":"__alla","x":"SD","g":"C7 Pendlingskommun nära mindre tätort","v":7.39371627925845,"o":61,"xt":"SD","ref":null,"tt":["87 486"]},{"k":"__alla","f":"__alla","x":"V","g":"C7 Pendlingskommun nära mindre tätort","v":3.62951645712497,"o":62,"xt":"V","ref":null,"tt":["20 644"]},{"k":"__alla","f":"__alla","x":"Övriga","g":"C7 Pendlingskommun nära mindre tätort","v":6.38811929215758,"o":63,"xt":"Övriga","ref":null,"tt":["6 848"]},{"k":"__alla","f":"__alla","x":"S","g":"C8 Landsbygdskommun","v":4.41278931470594,"o":64,"xt":"S","ref":null,"tt":["83 666"]},{"k":"__alla","f":"__alla","x":"C","g":"C8 Landsbygdskommun","v":3.69834797595527,"o":65,"xt":"C","ref":null,"tt":["17 596"]},{"k":"__alla","f":"__alla","x":"KD","g":"C8 Landsbygdskommun","v":5.12060169105847,"o":66,"xt":"KD","ref":null,"tt":["21 378"]},{"k":"__alla","f":"__alla","x":"L","g":"C8 Landsbygdskommun","v":2.77446308975683,"o":67,"xt":"L","ref":null,"tt":["10 021"]},{"k":"__alla","f":"__alla","x":"MP","g":"C8 Landsbygdskommun","v":2.21526549153164,"o":68,"xt":"MP","ref":null,"tt":["9 178"]},{"k":"__alla","f":"__alla","x":"M","g":"C8 Landsbygdskommun","v":3.3449005841685,"o":69,"xt":"M","ref":null,"tt":["44 937"]},{"k":"__alla","f":"__alla","x":"SD","g":"C8 Landsbygdskommun","v":5.24446269928198,"o":70,"xt":"SD","ref":null,"tt":["62 055"]},{"k":"__alla","f":"__alla","x":"V","g":"C8 Landsbygdskommun","v":2.81901118356626,"o":71,"xt":"V","ref":null,"tt":["16 034"]},{"k":"__alla","f":"__alla","x":"Övriga","g":"C8 Landsbygdskommun","v":4.50284051157194,"o":72,"xt":"Övriga","ref":null,"tt":["4 827"]},{"k":"__alla","f":"__alla","x":"S","g":"C9 Landsbygdskommun med besöksnäring","v":2.02532820601807,"o":73,"xt":"S","ref":null,"tt":["38 400"]},{"k":"__alla","f":"__alla","x":"C","g":"C9 Landsbygdskommun med besöksnäring","v":2.24662659212241,"o":74,"xt":"C","ref":null,"tt":["10 689"]},{"k":"__alla","f":"__alla","x":"KD","g":"C9 Landsbygdskommun med besöksnäring","v":2.95001077870129,"o":75,"xt":"KD","ref":null,"tt":["12 316"]},{"k":"__alla","f":"__alla","x":"L","g":"C9 Landsbygdskommun med besöksnäring","v":2.03523382624513,"o":76,"xt":"L","ref":null,"tt":["7 351"]},{"k":"__alla","f":"__alla","x":"MP","g":"C9 Landsbygdskommun med besöksnäring","v":1.92103922936373,"o":77,"xt":"MP","ref":null,"tt":["7 959"]},{"k":"__alla","f":"__alla","x":"M","g":"C9 Landsbygdskommun med besöksnäring","v":2.12795731580232,"o":78,"xt":"M","ref":null,"tt":["28 588"]},{"k":"__alla","f":"__alla","x":"SD","g":"C9 Landsbygdskommun med besöksnäring","v":2.84116263031926,"o":79,"xt":"SD","ref":null,"tt":["33 618"]},{"k":"__alla","f":"__alla","x":"V","g":"C9 Landsbygdskommun med besöksnäring","v":1.22788911725251,"o":80,"xt":"V","ref":null,"tt":["6 984"]},{"k":"__alla","f":"__alla","x":"Övriga","g":"C9 Landsbygdskommun med besöksnäring","v":2.22763272045448,"o":81,"xt":"Övriga","ref":null,"tt":["2 388"]},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"A1 Storstäder","v":18.3688343095449,"o":82,"xt":"Alla röstande","ref":null,"tt":["1 255 402"]},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"A2 Pendlingskommun nära storstad","v":18.605240859749,"o":83,"xt":"Alla röstande","ref":null,"tt":["1 271 559"]},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"B3 Större stad","v":25.6371395758495,"o":84,"xt":"Alla röstande","ref":null,"tt":["1 752 148"]},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"B4 Pendlingskommun nära större stad","v":9.94458485315418,"o":85,"xt":"Alla röstande","ref":null,"tt":["679 654"]},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"B5 Lågpendlingskommun nära större stad","v":4.7565606585379,"o":86,"xt":"Alla röstande","ref":null,"tt":["325 083"]},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"C6 Mindre stad/tätort","v":11.2284112768719,"o":87,"xt":"Alla röstande","ref":null,"tt":["767 396"]},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"C7 Pendlingskommun nära mindre tätort","v":5.26533880817562,"o":88,"xt":"Alla röstande","ref":null,"tt":["359 855"]},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"C8 Landsbygdskommun","v":3.99848531249136,"o":89,"xt":"Alla röstande","ref":null,"tt":["273 273"]},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"C9 Landsbygdskommun med besöksnäring","v":2.19540434562559,"o":90,"xt":"Alla röstande","ref":null,"tt":["150 043"]}],"filter":{"enabled":false,"label":null,"values":["__alla"],"default":"__alla","same_y":true},"labels":{"show":true,"keys":[{"k":"__alla","f":"__alla","x":"Alla röstande","g":"A1 Storstäder"},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"A2 Pendlingskommun nära storstad"},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"B3 Större stad"},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"B4 Pendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"B5 Lågpendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"C6 Mindre stad/tätort"},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"C7 Pendlingskommun nära mindre tätort"},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"C8 Landsbygdskommun"},{"k":"__alla","f":"__alla","x":"Alla röstande","g":"C9 Landsbygdskommun med besöksnäring"},{"k":"__alla","f":"__alla","x":"C","g":"A1 Storstäder"},{"k":"__alla","f":"__alla","x":"C","g":"A2 Pendlingskommun nära storstad"},{"k":"__alla","f":"__alla","x":"C","g":"B3 Större stad"},{"k":"__alla","f":"__alla","x":"C","g":"B4 Pendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"C","g":"B5 Lågpendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"C","g":"C6 Mindre stad/tätort"},{"k":"__alla","f":"__alla","x":"C","g":"C7 Pendlingskommun nära mindre tätort"},{"k":"__alla","f":"__alla","x":"C","g":"C8 Landsbygdskommun"},{"k":"__alla","f":"__alla","x":"C","g":"C9 Landsbygdskommun med besöksnäring"},{"k":"__alla","f":"__alla","x":"KD","g":"A1 Storstäder"},{"k":"__alla","f":"__alla","x":"KD","g":"A2 Pendlingskommun nära storstad"},{"k":"__alla","f":"__alla","x":"KD","g":"B3 Större stad"},{"k":"__alla","f":"__alla","x":"KD","g":"B4 Pendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"KD","g":"B5 Lågpendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"KD","g":"C6 Mindre stad/tätort"},{"k":"__alla","f":"__alla","x":"KD","g":"C7 Pendlingskommun nära mindre tätort"},{"k":"__alla","f":"__alla","x":"KD","g":"C8 Landsbygdskommun"},{"k":"__alla","f":"__alla","x":"KD","g":"C9 Landsbygdskommun med besöksnäring"},{"k":"__alla","f":"__alla","x":"L","g":"A1 Storstäder"},{"k":"__alla","f":"__alla","x":"L","g":"A2 Pendlingskommun nära storstad"},{"k":"__alla","f":"__alla","x":"L","g":"B3 Större stad"},{"k":"__alla","f":"__alla","x":"L","g":"B4 Pendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"L","g":"B5 Lågpendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"L","g":"C6 Mindre stad/tätort"},{"k":"__alla","f":"__alla","x":"L","g":"C7 Pendlingskommun nära mindre tätort"},{"k":"__alla","f":"__alla","x":"L","g":"C8 Landsbygdskommun"},{"k":"__alla","f":"__alla","x":"L","g":"C9 Landsbygdskommun med besöksnäring"},{"k":"__alla","f":"__alla","x":"M","g":"A1 Storstäder"},{"k":"__alla","f":"__alla","x":"M","g":"A2 Pendlingskommun nära storstad"},{"k":"__alla","f":"__alla","x":"M","g":"B3 Större stad"},{"k":"__alla","f":"__alla","x":"M","g":"B4 Pendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"M","g":"B5 Lågpendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"M","g":"C6 Mindre stad/tätort"},{"k":"__alla","f":"__alla","x":"M","g":"C7 Pendlingskommun nära mindre tätort"},{"k":"__alla","f":"__alla","x":"M","g":"C8 Landsbygdskommun"},{"k":"__alla","f":"__alla","x":"M","g":"C9 Landsbygdskommun med besöksnäring"},{"k":"__alla","f":"__alla","x":"MP","g":"A1 Storstäder"},{"k":"__alla","f":"__alla","x":"MP","g":"A2 Pendlingskommun nära storstad"},{"k":"__alla","f":"__alla","x":"MP","g":"B3 Större stad"},{"k":"__alla","f":"__alla","x":"MP","g":"B4 Pendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"MP","g":"B5 Lågpendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"MP","g":"C6 Mindre stad/tätort"},{"k":"__alla","f":"__alla","x":"MP","g":"C7 Pendlingskommun nära mindre tätort"},{"k":"__alla","f":"__alla","x":"MP","g":"C8 Landsbygdskommun"},{"k":"__alla","f":"__alla","x":"MP","g":"C9 Landsbygdskommun med besöksnäring"},{"k":"__alla","f":"__alla","x":"S","g":"A1 Storstäder"},{"k":"__alla","f":"__alla","x":"S","g":"A2 Pendlingskommun nära storstad"},{"k":"__alla","f":"__alla","x":"S","g":"B3 Större stad"},{"k":"__alla","f":"__alla","x":"S","g":"B4 Pendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"S","g":"B5 Lågpendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"S","g":"C6 Mindre stad/tätort"},{"k":"__alla","f":"__alla","x":"S","g":"C7 Pendlingskommun nära mindre tätort"},{"k":"__alla","f":"__alla","x":"S","g":"C8 Landsbygdskommun"},{"k":"__alla","f":"__alla","x":"S","g":"C9 Landsbygdskommun med besöksnäring"},{"k":"__alla","f":"__alla","x":"SD","g":"A1 Storstäder"},{"k":"__alla","f":"__alla","x":"SD","g":"A2 Pendlingskommun nära storstad"},{"k":"__alla","f":"__alla","x":"SD","g":"B3 Större stad"},{"k":"__alla","f":"__alla","x":"SD","g":"B4 Pendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"SD","g":"B5 Lågpendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"SD","g":"C6 Mindre stad/tätort"},{"k":"__alla","f":"__alla","x":"SD","g":"C7 Pendlingskommun nära mindre tätort"},{"k":"__alla","f":"__alla","x":"SD","g":"C8 Landsbygdskommun"},{"k":"__alla","f":"__alla","x":"SD","g":"C9 Landsbygdskommun med besöksnäring"},{"k":"__alla","f":"__alla","x":"V","g":"A1 Storstäder"},{"k":"__alla","f":"__alla","x":"V","g":"A2 Pendlingskommun nära storstad"},{"k":"__alla","f":"__alla","x":"V","g":"B3 Större stad"},{"k":"__alla","f":"__alla","x":"V","g":"B4 Pendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"V","g":"B5 Lågpendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"V","g":"C6 Mindre stad/tätort"},{"k":"__alla","f":"__alla","x":"V","g":"C7 Pendlingskommun nära mindre tätort"},{"k":"__alla","f":"__alla","x":"V","g":"C8 Landsbygdskommun"},{"k":"__alla","f":"__alla","x":"V","g":"C9 Landsbygdskommun med besöksnäring"},{"k":"__alla","f":"__alla","x":"Övriga","g":"A1 Storstäder"},{"k":"__alla","f":"__alla","x":"Övriga","g":"A2 Pendlingskommun nära storstad"},{"k":"__alla","f":"__alla","x":"Övriga","g":"B3 Större stad"},{"k":"__alla","f":"__alla","x":"Övriga","g":"B4 Pendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"Övriga","g":"B5 Lågpendlingskommun nära större stad"},{"k":"__alla","f":"__alla","x":"Övriga","g":"C6 Mindre stad/tätort"},{"k":"__alla","f":"__alla","x":"Övriga","g":"C7 Pendlingskommun nära mindre tätort"},{"k":"__alla","f":"__alla","x":"Övriga","g":"C8 Landsbygdskommun"},{"k":"__alla","f":"__alla","x":"Övriga","g":"C9 Landsbygdskommun med besöksnäring"}],"total_keys":[{"k":"__alla","f":"__alla","x":"Alla röstande"},{"k":"__alla","f":"__alla","x":"Övriga"},{"k":"__alla","f":"__alla","x":"SD"},{"k":"__alla","f":"__alla","x":"KD"},{"k":"__alla","f":"__alla","x":"M"},{"k":"__alla","f":"__alla","x":"L"},{"k":"__alla","f":"__alla","x":"C"},{"k":"__alla","f":"__alla","x":"S"},{"k":"__alla","f":"__alla","x":"MP"},{"k":"__alla","f":"__alla","x":"V"}],"position":"middle","size":10.5826771653543,"color":"#000000","box":true,"box_color":"#FFFFFF","format":"number","decimals":0,"width":null,"nudge_x":0,"nudge_y":0,"repel":false,"force":1,"max_overlaps":10,"show_group":false,"separator":": "},"highlight":{"x":[],"x_enc":[],"color":null,"other_alpha":0.35},"reference":{"enabled":false,"label":"Referens","color":"#263238"},"ref":{"y":[],"y_label":[]},"color_negative":null,"text_scale":1,"grid":{"major":false,"minor":false},"axis_line":{"x":false,"y":false},"bar_line":{"color":"#FFFFFF","width":0.853582677165354},"tooltip":{"show":true,"decimals":1,"unit":" %","set_decimals":1,"columns":["Antal röster"]},"interactive":{"type_toggle":false,"sort":false,"sort_start":"original","legend":true,"export":true},"animation":{"grow":true,"duration":700,"play_interval":1500}}</script>
+<script>vgrD3.whenReady(function(){vgrD3.render('vgrd3-1795344987123-3');});</script>
+</div>
+</div>
+<ul>
+<li><p><em>Mer än var tredje väljare bor i en storstad eller i en av dess pendlingskommuner.</em> De tre storstäderna och de 43 pendlingskommunerna runt dem är 46 av landets 290 kommuner, men där bor 37 procent av dem som röstade 2026. Rösterna fördelar sig nästan lika mellan storstäderna själva (18,4 procent) och pendlingskommunerna (18,6 procent). Det är därför partier som är starka i storstadsområdena får så många röster därifrån, även när de är svaga i resten av landet.</p></li>
+<li><p><em>Alla partier får huvuddelen av sina röster från städerna och deras omland.</em> Storstäderna, de större städerna och pendlingskommunerna kring dem (A1–B4) är 132 av landets 290 kommuner, men där bor 73 procent av dem som röstade. Därifrån kommer 81 procent av Miljöpartiets och Vänsterpartiets röster, 78 procent av Liberalernas, 75 procent av Centerpartiets och Moderaternas och 71 procent av Socialdemokraternas. Även för de partier som är minst storstadspräglade, Kristdemokraterna och Sverigedemokraterna, kommer två tredjedelar av rösterna (67 och 66 procent) härifrån.</p></li>
+<li><p><em>V, MP, L och C hämtar flest röster från storstadsområdena.</em> Nästan hälften av rösterna på V och MP (47–48 procent) kommer från storstäderna och deras pendlingskommuner (huvudgrupp A), mot 37 procent av alla röstande. Nästan var tredje röst på V och MP kommer från Stockholm, Göteborg och Malmö. Moderaterna hämtar lika många röster från storstadsområdena som från de större städerna och deras omland (40 och 39 procent).</p></li>
+<li><p><em>S, KD och SD hämtar flest röster från de större städerna och deras omland.</em> För dem är huvudgrupp B den största källan (42–44 procent av rösterna). Sverigedemokraterna är tydligast överrepresenterade i pendlingskommunerna nära större stad (B4), där 14 procent av partiets röster kommer ifrån mot 10 procent av alla röstande.</p></li>
+<li><p><em>Landsbygden är inte någon stor röstkälla för något parti.</em> Landsbygdskommunerna (C8 och C9) står för 6 procent av alla röstande. Även för SD och KD, som är överrepresenterade där, kommer bara 8 procent av rösterna från landsbygdskommunerna.</p></li>
+</ul>
+<p>Bilden av SD och KD som landsbygdspartier stämmer alltså bara till hälften. De är starkare på landsbygden än i storstäderna, men deras väljare bor ändå oftast i eller nära en större stad. Det är där de flesta väljarna bor.</p>
+<div class="faktabox">
+<details>
+<summary>
+Tabell: partiernas andel per kommungrupp 2026
+</summary>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Procent av de giltiga rösterna, riksdagsvalet 2026</caption>
+<colgroup>
+<col style="width: 39%">
+<col style="width: 15%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 5%">
+<col style="width: 4%">
+<col style="width: 5%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Kommungrupp</th>
+<th style="text-align: right;">Antal kommuner</th>
+<th style="text-align: right;">V</th>
+<th style="text-align: right;">MP</th>
+<th style="text-align: right;">S</th>
+<th style="text-align: right;">C</th>
+<th style="text-align: right;">L</th>
+<th style="text-align: right;">M</th>
+<th style="text-align: right;">KD</th>
+<th style="text-align: right;">SD</th>
+<th style="text-align: right;">Övriga</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A1 Storstäder</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">14,4</td>
+<td style="text-align: right;">10,2</td>
+<td style="text-align: right;">27,0</td>
+<td style="text-align: right;">8,1</td>
+<td style="text-align: right;">6,3</td>
+<td style="text-align: right;">18,4</td>
+<td style="text-align: right;">4,1</td>
+<td style="text-align: right;">10,2</td>
+<td style="text-align: right;">1,3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">A2 Pendlingskommun nära storstad</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">7,1</td>
+<td style="text-align: right;">5,6</td>
+<td style="text-align: right;">24,8</td>
+<td style="text-align: right;">7,8</td>
+<td style="text-align: right;">6,8</td>
+<td style="text-align: right;">24,2</td>
+<td style="text-align: right;">6,0</td>
+<td style="text-align: right;">16,4</td>
+<td style="text-align: right;">1,4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">B3 Större stad</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">8,8</td>
+<td style="text-align: right;">6,4</td>
+<td style="text-align: right;">29,8</td>
+<td style="text-align: right;">6,6</td>
+<td style="text-align: right;">4,9</td>
+<td style="text-align: right;">19,5</td>
+<td style="text-align: right;">6,1</td>
+<td style="text-align: right;">16,2</td>
+<td style="text-align: right;">1,7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">B4 Pendlingskommun nära större stad</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">5,4</td>
+<td style="text-align: right;">4,1</td>
+<td style="text-align: right;">26,5</td>
+<td style="text-align: right;">6,2</td>
+<td style="text-align: right;">4,8</td>
+<td style="text-align: right;">19,5</td>
+<td style="text-align: right;">7,2</td>
+<td style="text-align: right;">24,4</td>
+<td style="text-align: right;">1,8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">B5 Lågpendlingskommun nära större stad</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">6,3</td>
+<td style="text-align: right;">3,6</td>
+<td style="text-align: right;">29,6</td>
+<td style="text-align: right;">5,7</td>
+<td style="text-align: right;">4,4</td>
+<td style="text-align: right;">18,0</td>
+<td style="text-align: right;">7,1</td>
+<td style="text-align: right;">23,4</td>
+<td style="text-align: right;">2,0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C6 Mindre stad/tätort</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">6,1</td>
+<td style="text-align: right;">4,8</td>
+<td style="text-align: right;">31,3</td>
+<td style="text-align: right;">6,8</td>
+<td style="text-align: right;">4,4</td>
+<td style="text-align: right;">19,0</td>
+<td style="text-align: right;">6,9</td>
+<td style="text-align: right;">19,2</td>
+<td style="text-align: right;">1,6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C7 Pendlingskommun nära mindre tätort</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: right;">5,8</td>
+<td style="text-align: right;">3,9</td>
+<td style="text-align: right;">27,3</td>
+<td style="text-align: right;">6,0</td>
+<td style="text-align: right;">4,4</td>
+<td style="text-align: right;">18,0</td>
+<td style="text-align: right;">8,1</td>
+<td style="text-align: right;">24,6</td>
+<td style="text-align: right;">1,9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C8 Landsbygdskommun</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">5,9</td>
+<td style="text-align: right;">3,4</td>
+<td style="text-align: right;">31,0</td>
+<td style="text-align: right;">6,5</td>
+<td style="text-align: right;">3,7</td>
+<td style="text-align: right;">16,7</td>
+<td style="text-align: right;">7,9</td>
+<td style="text-align: right;">23,0</td>
+<td style="text-align: right;">1,8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C9 Landsbygdskommun med besöksnäring</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">4,7</td>
+<td style="text-align: right;">5,4</td>
+<td style="text-align: right;">25,9</td>
+<td style="text-align: right;">7,2</td>
+<td style="text-align: right;">5,0</td>
+<td style="text-align: right;">19,3</td>
+<td style="text-align: right;">8,3</td>
+<td style="text-align: right;">22,7</td>
+<td style="text-align: right;">1,6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Riket</td>
+<td style="text-align: right;">290</td>
+<td style="text-align: right;">8,4</td>
+<td style="text-align: right;">6,1</td>
+<td style="text-align: right;">28,0</td>
+<td style="text-align: right;">7,0</td>
+<td style="text-align: right;">5,3</td>
+<td style="text-align: right;">19,9</td>
+<td style="text-align: right;">6,2</td>
+<td style="text-align: right;">17,5</td>
+<td style="text-align: right;">1,6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
+</div>
+<p>Källor: <a href="https://www.val.se">Valmyndigheten, slutligt valresultat riksdagen 2026</a> och <a href="https://skr.se/skr/tjanster/kommunerochregioner/faktakommunerochregioner/kommungruppsindelning.2051.html">SKR, Kommungruppsindelning 2023</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopierat!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopierat!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lindellch\.quarto\.pub\/statistik-och-strunt\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Rullbar kod","output":"Rullbara utdata"};
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

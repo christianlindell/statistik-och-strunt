@@ -1,0 +1,160 @@
+---
+title: "Var får partierna sina röster?"
+author: "Christian Lindell"
+date: "2026-11-22"
+categories: [val, kommuner]
+description: "Riksdagsvalet 2026 uppdelat på SKR:s kommungrupper: V och MP är storstadspartier, SD och KD är starkast utanför storstäderna – men alla partier får huvuddelen av sina röster från städerna och deras pendlingskommuner."
+image: "miniatyr.png"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+***Det talas ofta om en klyfta mellan stad och land i svensk politik. Valresultatet 2026 bekräftar att partierna är olika starka i olika delar av landet. Vänsterpartiet och Miljöpartiet får omkring 70 procent större andel av rösterna i storstäderna än i landet som helhet, och Sverigedemokraterna är mer än dubbelt så starka i pendlingskommunerna kring de större städerna som i storstäderna. Men skillnaderna ska inte överdrivas. Alla partier, också SD och KD, får mellan två tredjedelar och fyra femtedelar av sina röster från storstäderna, de större städerna och deras pendlingskommuner.***
+
+```{r}
+#| label: las-in-data
+library(funcVGRD3)
+library(knitr)
+# Diagrammens dataupplägg (andel, fordelning, färger). Data skapas av forbered_data.R.
+source("diagramdata.R")
+```
+
+Jag har delat in landets 290 kommuner efter Sveriges Kommuner och Regioners (SKR) kommungruppsindelning från 2023. Den sorterar kommunerna i nio grupper efter hur stora de är och hur mycket invånarna pendlar till andra kommuner. Grupperna är samlade i tre huvudgrupper:
+
+-   *A. Storstäder och storstadsnära kommuner:* de tre storstäderna Stockholm, Göteborg och Malmö (A1) och 43 pendlingskommuner runt dem (A2).
+-   *B. Större städer och kommuner nära större stad:* 23 större städer som Uppsala, Linköping och Borås (B3), 63 pendlingskommuner nära en större stad (B4) och 24 kommuner nära en större stad där färre pendlar (B5).
+-   *C. Mindre städer/tätorter och landsbygdskommuner:* 27 mindre städer (C6), 51 pendlingskommuner nära en mindre tätort (C7), 35 landsbygdskommuner (C8) och 21 landsbygdskommuner med besöksnäring, till exempel Åre och Båstad (C9).
+
+Valresultatet kommer från Valmyndighetens slutliga resultat för riksdagsvalet. Jag har summerat rösterna i varje kommungrupp och räknat ut partiernas andel av de giltiga rösterna där. För jämförelsen med 2022 använder jag samma kommungruppsindelning båda åren.
+
+## Partiernas stöd i olika kommungrupper
+
+Diagrammet visar partiernas andel av rösterna i varje kommungrupp 2026. Det mörka strecket på varje stapel är partiets andel i hela riket. Ligger stapeln över strecket är partiet överrepresenterat i kommungruppen, ligger den under är partiet underrepresenterat.
+
+```{r}
+#| label: diagram-andel
+#| column: page
+func_d3_stapeldiagram(
+  andel, x_value = "parti", y_value = "andel_2026", group = "parti",
+  facet_var = "grupp", facet_ncol = 3, facet_same_y_scale = TRUE,
+  colors = partifarg, legend_position = "none",
+  reference_column = "riket_2026", reference_label = "Riket",
+  subtitle = "Partiernas andel av de giltiga rösterna per kommungrupp, riksdagsvalet 2026 (%). Strecket = andel i riket.",
+  subtitle_width = 110,
+  y_axis_title = "Procent av giltiga röster", show_major_grid = "y",
+  data_labels = TRUE, data_label_decimals = 0, data_label_size = 2.8,
+  tooltip_decimals = 1, tooltip_unit = " %",
+  tooltip_columns = c("Andel i riket (%)" = "riket_2026", "Antal röster" = "roster_2026"),
+  interactive_sort = FALSE, interactive_bar_type_toggle = FALSE,
+  caption = kalla, width = 1100, height = 900
+)
+```
+
+Några saker att lägga märke till:
+
+-   *Storstäderna är de rödgrönas och liberalernas fäste.* I Stockholm, Göteborg och Malmö får Vänsterpartiet 14,4 procent av rösterna mot 8,4 procent i riket, och Miljöpartiet 10,2 procent mot 6,1. Även Centerpartiet (8,1 mot 7,0) och Liberalerna (6,3 mot 5,3) är starkare i storstäderna än i landet som helhet.
+
+-   *Sverigedemokraterna är svagast där de flesta bor tätt.* I storstäderna får SD bara 10,2 procent, mot 17,5 procent i riket. I pendlingskommunerna nära större stad (B4) och nära mindre tätort (C7) får partiet däremot omkring 24–25 procent och är nästan lika stort som Socialdemokraterna.
+
+-   *Moderaterna är storstädernas förortsparti.* I pendlingskommunerna kring storstäderna (A2), som Täby, Lidingö och Kungsbacka, får M 24,2 procent och är lika stort som S. I övriga kommungrupper får M mellan 17 och 20 procent, alltså strax under sitt rikssnitt på 19,9 procent.
+
+-   *Socialdemokraterna är starkast i de mindre städerna och på landsbygden.* S får omkring 31 procent i de mindre städerna (C6) och i landsbygdskommunerna (C8), men bara 24,8 procent i storstädernas pendlingskommuner och 27,0 procent i storstäderna, alltså under rikssnittet på 28,0 procent.
+
+-   *Kristdemokraterna är det parti som är minst storstadspräglat.* I storstäderna får KD 4,1 procent, men omkring 8 procent i pendlingskommunerna nära mindre tätort och på landsbygden (C7–C9), mot 6,2 procent i riket.
+
+## Förändringen sedan 2022
+
+Nästa diagram visar hur partiernas andel har förändrats sedan valet 2022, i procentenheter. Strecket är förändringen i riket.
+
+```{r}
+#| label: diagram-forandring
+#| column: page
+func_d3_stapeldiagram(
+  andel, x_value = "parti", y_value = "diff", group = "parti",
+  facet_var = "grupp", facet_ncol = 3, facet_same_y_scale = TRUE,
+  colors = partifarg, legend_position = "none",
+  reference_column = "diff_riket", reference_label = "Riket",
+  subtitle = "Förändring i partiernas andel av de giltiga rösterna per kommungrupp 2022–2026 (procentenheter). Strecket = förändring i riket.",
+  subtitle_width = 110,
+  y_axis_title = "Procentenheter", show_major_grid = "y", y_break_line = 0,
+  data_labels = TRUE, data_label_decimals = 1, data_label_size = 2.8,
+  tooltip_decimals = 1, tooltip_unit = " procentenheter",
+  tooltip_columns = c("Andel 2022 (%)" = "andel_2022", "Andel 2026 (%)" = "andel_2026"),
+  interactive_sort = FALSE, interactive_bar_type_toggle = FALSE,
+  caption = kalla, width = 1100, height = 900
+)
+```
+
+-   *S och SD backar i alla kommungrupper.* Socialdemokraterna tappar 2,3 procentenheter i riket. Tappet är minst i storstäderna (−1,2) och störst i landsbygdskommunerna (−3,9). Sverigedemokraterna tappar 3,1 procentenheter i riket, mest i kommunerna kring de större och mindre städerna och i landsbygdskommunerna med besöksnäring (B4, B5, C7 och C9, −3,6 till −3,7) och minst i de mindre städerna (−2,4).
+
+-   *Moderaterna växer utanför de stora städerna.* M backar något i storstäderna (−0,3) och ökar bara lite i storstädernas pendlingskommuner och de större städerna (+0,3 och +0,5). I alla övriga kommungrupper ökar M med mellan 1,3 och 2,3 procentenheter, mest i landsbygdskommunerna (C8 och C9).
+
+-   *Vänsterpartiets framgång är en stadsframgång.* V ökar med 1,7 procentenheter i riket, men med 2,2 i storstäderna och 2,0 i de större städerna. I landsbygdskommunerna med besöksnäring står partiet still.
+
+-   *Centerpartiet ökar bara kring storstäderna.* C ökar med 0,7–0,9 procentenheter i storstäderna och deras pendlingskommuner, men står still eller backar något i de flesta andra kommungrupper.
+
+## Varifrån kommer partiernas röster?
+
+Diagrammen ovan visar hur starka partierna är i varje kommungrupp. Men kommungrupperna är olika stora, så de säger inte var partierna hämtar sina röster. Det visar nästa diagram. Varje stapel är ett partis röster i hela landet, uppdelade på kommungrupperna, och summerar till 100 procent. Den nedersta stapeln visar hur alla som röstade, inklusive blanka och ogiltiga röster, fördelar sig. Ett parti som har en större andel än alla röstande i en kommungrupp är överrepresenterat där.
+
+```{r}
+#| label: diagram-fordelning
+#| column: page
+func_d3_stapeldiagram(
+  fordelning, x_value = "parti", y_value = "andel", group = "grupp",
+  bar_type = "filled", horizontal = TRUE,
+  colors = kg_farg, legend_position = "bottom", legend_title = "",
+  subtitle = "Andel av partiets röster i riksdagsvalet 2026 som kommer från respektive kommungrupp (%)",
+  subtitle_width = 110,
+  y_axis_title = "Andel av partiets röster (%)",
+  data_labels = TRUE, data_label_position = "middle", data_label_decimals = 0,
+  data_label_size = 2.8, data_label_color = "black",
+  data_label_box = TRUE, data_label_box_color = "white",
+  bar_line_color = "white",
+  tooltip_decimals = 1, tooltip_unit = " %",
+  tooltip_columns = c("Antal röster" = "roster"),
+  interactive_sort = FALSE, interactive_bar_type_toggle = FALSE,
+  caption = kalla, width = 1100, height = 650
+)
+```
+
+-   *Mer än var tredje väljare bor i en storstad eller i en av dess pendlingskommuner.* De tre storstäderna och de 43 pendlingskommunerna runt dem är 46 av landets 290 kommuner, men där bor 37 procent av dem som röstade 2026. Rösterna fördelar sig nästan lika mellan storstäderna själva (18,4 procent) och pendlingskommunerna (18,6 procent). Det är därför partier som är starka i storstadsområdena får så många röster därifrån, även när de är svaga i resten av landet.
+
+-   *Alla partier får huvuddelen av sina röster från städerna och deras omland.* Storstäderna, de större städerna och pendlingskommunerna kring dem (A1–B4) är 132 av landets 290 kommuner, men där bor 73 procent av dem som röstade. Därifrån kommer 81 procent av Miljöpartiets och Vänsterpartiets röster, 78 procent av Liberalernas, 75 procent av Centerpartiets och Moderaternas och 71 procent av Socialdemokraternas. Även för de partier som är minst storstadspräglade, Kristdemokraterna och Sverigedemokraterna, kommer två tredjedelar av rösterna (67 och 66 procent) härifrån.
+
+-   *V, MP, L och C hämtar flest röster från storstadsområdena.* Nästan hälften av rösterna på V och MP (47–48 procent) kommer från storstäderna och deras pendlingskommuner (huvudgrupp A), mot 37 procent av alla röstande. Nästan var tredje röst på V och MP kommer från Stockholm, Göteborg och Malmö. Moderaterna hämtar lika många röster från storstadsområdena som från de större städerna och deras omland (40 och 39 procent).
+
+-   *S, KD och SD hämtar flest röster från de större städerna och deras omland.* För dem är huvudgrupp B den största källan (42–44 procent av rösterna). Sverigedemokraterna är tydligast överrepresenterade i pendlingskommunerna nära större stad (B4), där 14 procent av partiets röster kommer ifrån mot 10 procent av alla röstande.
+
+-   *Landsbygden är inte någon stor röstkälla för något parti.* Landsbygdskommunerna (C8 och C9) står för 6 procent av alla röstande. Även för SD och KD, som är överrepresenterade där, kommer bara 8 procent av rösterna från landsbygdskommunerna.
+
+Bilden av SD och KD som landsbygdspartier stämmer alltså bara till hälften. De är starkare på landsbygden än i storstäderna, men deras väljare bor ändå oftast i eller nära en större stad. Det är där de flesta väljarna bor.
+
+::: faktabox
+<details>
+
+<summary>Tabell: partiernas andel per kommungrupp 2026</summary>
+
+```{r}
+#| label: tabell
+tabell <- andel |>
+  select(grupp, antal_kommuner, parti, andel_2026) |>
+  tidyr::pivot_wider(names_from = parti, values_from = andel_2026)
+riket_rad <- andel |>
+  distinct(parti, riket_2026) |>
+  tidyr::pivot_wider(names_from = parti, values_from = riket_2026) |>
+  mutate(grupp = "Riket", antal_kommuner = 290L)
+# Kolumnerna väljs med namn, så att partierna hamnar i ideologisk ordning under rätt rubrik
+tabell <- bind_rows(mutate(tabell, grupp = as.character(grupp)), riket_rad) |>
+  select(grupp, antal_kommuner, all_of(names(partifarg)))
+kable(tabell, digits = 1, format.args = list(decimal.mark = ","),
+      col.names = c("Kommungrupp", "Antal kommuner", names(partifarg)),
+      caption = "Procent av de giltiga rösterna, riksdagsvalet 2026")
+```
+
+</details>
+:::
+
+Källor: [Valmyndigheten, slutligt valresultat riksdagen 2026](https://www.val.se) och [SKR, Kommungruppsindelning 2023](https://skr.se/skr/tjanster/kommunerochregioner/faktakommunerochregioner/kommungruppsindelning.2051.html).
