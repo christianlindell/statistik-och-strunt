@@ -23,9 +23,9 @@ source("diagramdata.R")
 
 Jag har delat in landets 290 kommuner efter Sveriges Kommuner och Regioners (SKR) kommungruppsindelning från 2023. Den sorterar kommunerna i nio grupper efter hur stora de är och hur mycket invånarna pendlar till andra kommuner. Grupperna är samlade i tre huvudgrupper:
 
--   *A. Storstäder och storstadsnära kommuner:* de tre storstäderna Stockholm, Göteborg och Malmö (A1) och 43 pendlingskommuner runt dem (A2).
--   *B. Större städer och kommuner nära större stad:* 23 större städer som Uppsala, Linköping och Borås (B3), 63 pendlingskommuner nära en större stad (B4) och 24 kommuner nära en större stad där färre pendlar (B5).
--   *C. Mindre städer/tätorter och landsbygdskommuner:* 27 mindre städer (C6), 51 pendlingskommuner nära en mindre tätort (C7), 35 landsbygdskommuner (C8) och 21 landsbygdskommuner med besöksnäring, till exempel Åre och Båstad (C9).
+- *A. Storstäder och storstadsnära kommuner:* de tre storstäderna Stockholm, Göteborg och Malmö (A1) och 43 pendlingskommuner runt dem (A2).
+- *B. Större städer och kommuner nära större stad:* 23 större städer som Uppsala, Linköping och Borås (B3), 63 pendlingskommuner nära en större stad (B4) och 24 kommuner nära en större stad där färre pendlar (B5).
+- *C. Mindre städer/tätorter och landsbygdskommuner:* 27 mindre städer (C6), 51 pendlingskommuner nära en mindre tätort (C7), 35 landsbygdskommuner (C8) och 21 landsbygdskommuner med besöksnäring, till exempel Åre och Båstad (C9).
 
 Valresultatet kommer från Valmyndighetens slutliga resultat för riksdagsvalet. Jag har summerat rösterna i varje kommungrupp och räknat ut partiernas andel av de giltiga rösterna där. För jämförelsen med 2022 använder jag samma kommungruppsindelning båda åren.
 
@@ -54,15 +54,15 @@ func_d3_stapeldiagram(
 
 Några saker att lägga märke till:
 
--   *Storstäderna är de rödgrönas och liberalernas fäste.* I Stockholm, Göteborg och Malmö får Vänsterpartiet 14,4 procent av rösterna mot 8,4 procent i riket, och Miljöpartiet 10,2 procent mot 6,1. Även Centerpartiet (8,1 mot 7,0) och Liberalerna (6,3 mot 5,3) är starkare i storstäderna än i landet som helhet.
+- *Storstäderna är de rödgrönas och liberalernas fäste.* I Stockholm, Göteborg och Malmö får Vänsterpartiet 14,4 procent av rösterna mot 8,4 procent i riket, och Miljöpartiet 10,2 procent mot 6,1. Även Centerpartiet (8,1 mot 7,0) och Liberalerna (6,3 mot 5,3) är starkare i storstäderna än i landet som helhet.
 
--   *Sverigedemokraterna är svagast där de flesta bor tätt.* I storstäderna får SD bara 10,2 procent, mot 17,5 procent i riket. I pendlingskommunerna nära större stad (B4) och nära mindre tätort (C7) får partiet däremot omkring 24–25 procent och är nästan lika stort som Socialdemokraterna.
+- *Sverigedemokraterna är svagast där de flesta bor tätt.* I storstäderna får SD bara 10,2 procent, mot 17,5 procent i riket. I pendlingskommunerna nära större stad (B4) och nära mindre tätort (C7) får partiet däremot omkring 24–25 procent och är nästan lika stort som Socialdemokraterna.
 
--   *Moderaterna är storstädernas förortsparti.* I pendlingskommunerna kring storstäderna (A2), som Täby, Lidingö och Kungsbacka, får M 24,2 procent och är lika stort som S. I övriga kommungrupper får M mellan 17 och 20 procent, alltså strax under sitt rikssnitt på 19,9 procent.
+- *Moderaterna är storstädernas förortsparti.* I pendlingskommunerna kring storstäderna (A2), som Täby, Lidingö och Kungsbacka, får M 24,2 procent och är lika stort som S. I övriga kommungrupper får M mellan 17 och 20 procent, alltså strax under sitt rikssnitt på 19,9 procent.
 
--   *Socialdemokraterna är starkast i de mindre städerna och på landsbygden.* S får omkring 31 procent i de mindre städerna (C6) och i landsbygdskommunerna (C8), men bara 24,8 procent i storstädernas pendlingskommuner och 27,0 procent i storstäderna, alltså under rikssnittet på 28,0 procent.
+- *Socialdemokraterna är starkast i de mindre städerna och på landsbygden.* S får omkring 31 procent i de mindre städerna (C6) och i landsbygdskommunerna (C8), men bara 24,8 procent i storstädernas pendlingskommuner och 27,0 procent i storstäderna, alltså under rikssnittet på 28,0 procent.
 
--   *Kristdemokraterna är det parti som är minst storstadspräglat.* I storstäderna får KD 4,1 procent, men omkring 8 procent i pendlingskommunerna nära mindre tätort och på landsbygden (C7–C9), mot 6,2 procent i riket.
+- *Kristdemokraterna är det parti som är minst storstadspräglat.* I storstäderna får KD 4,1 procent, men omkring 8 procent i pendlingskommunerna nära mindre tätort och på landsbygden (C7–C9), mot 6,2 procent i riket.
 
 ## Förändringen sedan 2022
 
@@ -87,13 +87,13 @@ func_d3_stapeldiagram(
 )
 ```
 
--   *S och SD backar i alla kommungrupper.* Socialdemokraterna tappar 2,3 procentenheter i riket. Tappet är minst i storstäderna (−1,2) och störst i landsbygdskommunerna (−3,9). Sverigedemokraterna tappar 3,1 procentenheter i riket, mest i kommunerna kring de större och mindre städerna och i landsbygdskommunerna med besöksnäring (B4, B5, C7 och C9, −3,6 till −3,7) och minst i de mindre städerna (−2,4).
+- *S och SD backar i alla kommungrupper.* Socialdemokraterna tappar 2,3 procentenheter i riket. Tappet är minst i storstäderna (−1,2) och störst i landsbygdskommunerna (−3,9). Sverigedemokraterna tappar 3,1 procentenheter i riket, mest i kommunerna kring de större och mindre städerna och i landsbygdskommunerna med besöksnäring (B4, B5, C7 och C9, −3,6 till −3,7) och minst i de mindre städerna (−2,4).
 
--   *Moderaterna växer utanför de stora städerna.* M backar något i storstäderna (−0,3) och ökar bara lite i storstädernas pendlingskommuner och de större städerna (+0,3 och +0,5). I alla övriga kommungrupper ökar M med mellan 1,3 och 2,3 procentenheter, mest i landsbygdskommunerna (C8 och C9).
+- *Moderaterna växer utanför de stora städerna.* M backar något i storstäderna (−0,3) och ökar bara lite i storstädernas pendlingskommuner och de större städerna (+0,3 och +0,5). I alla övriga kommungrupper ökar M med mellan 1,3 och 2,3 procentenheter, mest i landsbygdskommunerna (C8 och C9).
 
--   *Vänsterpartiets framgång är en stadsframgång.* V ökar med 1,7 procentenheter i riket, men med 2,2 i storstäderna och 2,0 i de större städerna. I landsbygdskommunerna med besöksnäring står partiet still.
+- *Vänsterpartiets framgång är en stadsframgång.* V ökar med 1,7 procentenheter i riket, men med 2,2 i storstäderna och 2,0 i de större städerna. I landsbygdskommunerna med besöksnäring står partiet still.
 
--   *Centerpartiet ökar bara kring storstäderna.* C ökar med 0,7–0,9 procentenheter i storstäderna och deras pendlingskommuner, men står still eller backar något i de flesta andra kommungrupper.
+- *Centerpartiet ökar bara kring storstäderna.* C ökar med 0,7–0,9 procentenheter i storstäderna och deras pendlingskommuner, men står still eller backar något i de flesta andra kommungrupper.
 
 ## Varifrån kommer partiernas röster?
 
@@ -120,17 +120,19 @@ func_d3_stapeldiagram(
 )
 ```
 
--   *Mer än var tredje väljare bor i en storstad eller i en av dess pendlingskommuner.* De tre storstäderna och de 43 pendlingskommunerna runt dem är 46 av landets 290 kommuner, men där bor 37 procent av dem som röstade 2026. Rösterna fördelar sig nästan lika mellan storstäderna själva (18,4 procent) och pendlingskommunerna (18,6 procent). Det är därför partier som är starka i storstadsområdena får så många röster därifrån, även när de är svaga i resten av landet.
+- *Mer än var tredje väljare bor i en storstad eller i en av dess pendlingskommuner.* De tre storstäderna och de 43 pendlingskommunerna runt dem är 46 av landets 290 kommuner, men där bor 37 procent av dem som röstade 2026. Rösterna fördelar sig nästan lika mellan storstäderna själva (18,4 procent) och pendlingskommunerna (18,6 procent). Det är därför partier som är starka i storstadsområdena får så många röster därifrån, även när de är svaga i resten av landet.
 
--   *Alla partier får huvuddelen av sina röster från städerna och deras omland.* Storstäderna, de större städerna och pendlingskommunerna kring dem (A1–B4) är 132 av landets 290 kommuner, men där bor 73 procent av dem som röstade. Därifrån kommer 81 procent av Miljöpartiets och Vänsterpartiets röster, 78 procent av Liberalernas, 75 procent av Centerpartiets och Moderaternas och 71 procent av Socialdemokraternas. Även för de partier som är minst storstadspräglade, Kristdemokraterna och Sverigedemokraterna, kommer två tredjedelar av rösterna (67 och 66 procent) härifrån.
+- *Alla partier får huvuddelen av sina röster från städerna och deras omland.* Storstäderna, de större städerna och pendlingskommunerna kring dem (A1–B4) är 132 av landets 290 kommuner, men där bor 73 procent av dem som röstade. Därifrån kommer 81 procent av Miljöpartiets och Vänsterpartiets röster, 78 procent av Liberalernas, 75 procent av Centerpartiets och Moderaternas och 71 procent av Socialdemokraternas. Även för de partier som är minst storstadspräglade, Kristdemokraterna och Sverigedemokraterna, kommer två tredjedelar av rösterna (67 och 66 procent) härifrån.
 
--   *V, MP, L och C hämtar flest röster från storstadsområdena.* Nästan hälften av rösterna på V och MP (47–48 procent) kommer från storstäderna och deras pendlingskommuner (huvudgrupp A), mot 37 procent av alla röstande. Nästan var tredje röst på V och MP kommer från Stockholm, Göteborg och Malmö. Moderaterna hämtar lika många röster från storstadsområdena som från de större städerna och deras omland (40 och 39 procent).
+- *V, MP, L och C hämtar flest röster från storstadsområdena.* Nästan hälften av rösterna på V och MP (47–48 procent) kommer från storstäderna och deras pendlingskommuner (huvudgrupp A), mot 37 procent av alla röstande. Nästan var tredje röst på V och MP kommer från Stockholm, Göteborg och Malmö. Moderaterna hämtar lika många röster från storstadsområdena som från de större städerna och deras omland (40 och 39 procent).
 
--   *S, KD och SD hämtar flest röster från de större städerna och deras omland.* För dem är huvudgrupp B den största källan (42–44 procent av rösterna). Sverigedemokraterna är tydligast överrepresenterade i pendlingskommunerna nära större stad (B4), där 14 procent av partiets röster kommer ifrån mot 10 procent av alla röstande.
+- *S, KD och SD hämtar flest röster från de större städerna och deras omland.* För dem är huvudgrupp B den största källan (42–44 procent av rösterna). Sverigedemokraterna är tydligast överrepresenterade i pendlingskommunerna nära större stad (B4), där 14 procent av partiets röster kommer ifrån mot 10 procent av alla röstande.
 
--   *Landsbygden är inte någon stor röstkälla för något parti.* Landsbygdskommunerna (C8 och C9) står för 6 procent av alla röstande. Även för SD och KD, som är överrepresenterade där, kommer bara 8 procent av rösterna från landsbygdskommunerna.
+- *Landsbygden är inte någon stor röstkälla för något parti.* Landsbygdskommunerna (C8 och C9) står för 6 procent av alla röstande. Även för SD och KD, som är överrepresenterade där, kommer bara 8 procent av rösterna från landsbygdskommunerna.
 
 Bilden av SD och KD som landsbygdspartier stämmer alltså bara till hälften. De är starkare på landsbygden än i storstäderna, men deras väljare bor ändå oftast i eller nära en större stad. Det är där de flesta väljarna bor.
+
+Centern har en stark identitet som landsbygdsparti, men C:s röstandel på landsbygden ligger ungefär på samma andel som i riket. Centern är tvärtom starkare i storstäderna än på landsbygden. Visserligen kan det finnas landsbygd även i storstadskommuner och deras pendlingskommuner, men då är den oftast helt uppkopplad mot städernas arbetsmarknad och kan snarast liknas vid glesa förorter.
 
 ::: faktabox
 <details>
