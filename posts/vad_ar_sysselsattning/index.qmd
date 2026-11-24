@@ -80,7 +80,7 @@ Väldigt få har en överenskommen arbetstid på under 20 h / vecka: Till exempe
 
 Sysselsatta i arbetsmarknadspolitiska åtgärder som innebär lönesubvention till arbetsgivare. se tabellen som heter "Arbetssökande 1996--årtal-månad": <https://arbetsformedlingen.se/statistik/sok-statistik/tidigare-statistik>
 
-Allmän statistik om Arbetskraftsundersökningarna hittar man på <http://scb.se/aku> .
+Allmän statistik om Arbetskraftsundersökningarna hittar man på <https://scb.se/aku> .
 
 Jämförelser med andra EU-länder hittar man på Eurostat: <https://ec.europa.eu/eurostat/data/database> Leta under:
 
